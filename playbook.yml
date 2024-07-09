@@ -12,6 +12,7 @@
           - vim
           - curl
           - git
+          - nano
         state: present
 
 - hosts: db
@@ -37,8 +38,8 @@
 
     - name: Create MySQL user
       mysql_user:
-        name: myapp
-        password: myapppassword
+        name: mysqluser
+        password: p@ssw0rd
         priv: 'myapp.*:ALL'
         host: '%'
         state: present
