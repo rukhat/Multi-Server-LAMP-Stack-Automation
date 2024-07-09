@@ -1,0 +1,83 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+    - name: Update apt cache
+      apt:
+        update_cache: yes
+
+    - name: Install common packages
+      apt:
+        name:
+          - vim
+          - curl
+          - git
+        state: present
+
+- hosts: db
+  become: yes
+  tasks:
+    - name: Install MySQL
+      apt:
+        name:
+          - mysql-server
+          - python3-pymysql
+        state: present
+
+    - name: Start MySQL service
+      service:
+        name: mysql
+        state: started
+        enabled: yes
+
+    - name: Create MySQL database
+      mysql_db:
+        name: myapp
+        state: present
+
+    - name: Create MySQL user
+      mysql_user:
+        name: myapp
+        password: myapppassword
+        priv: 'myapp.*:ALL'
+        host: '%'
+        state: present
+
+- hosts: auth
+  become: yes
+  tasks:
+    - name: Install OpenLDAP
+      apt:
+        name:
+          - slapd
+          - ldap-utils
+        state: present
+
+    - name: Start OpenLDAP service
+      service:
+        name: slapd
+        state: started
+        enabled: yes
+
+- hosts: app
+  become: yes
+  tasks:
+    - name: Install Apache and PHP
+      apt:
+        name:
+          - apache2
+          - php
+          - libapache2-mod-php
+          - php-mysql
+        state: present
+
+    - name: Start Apache service
+      service:
+        name: apache2
+        state: started
+        enabled: yes
+
+    - name: Copy PHP info file
+      copy:
+        content: "<?php phpinfo(); ?>"
+        dest: /var/www/html/info.php
