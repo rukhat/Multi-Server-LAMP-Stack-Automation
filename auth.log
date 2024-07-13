@@ -1,0 +1,830 @@
+2024-07-07T15:25:01.458313-06:00 joel-VirtualBox CRON[30519]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-07T15:25:01.460659-06:00 joel-VirtualBox CRON[30519]: pam_unix(cron:session): session closed for user root
+2024-07-07T15:27:27.686039-06:00 joel-VirtualBox pkexec: pam_unix(polkit-1:session): session opened for user root(uid=0) by joel(uid=1000)
+2024-07-07T15:27:27.686939-06:00 joel-VirtualBox pkexec[36828]: joel: Executing command [USER=root] [TTY=unknown] [CWD=/home/joel] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+2024-07-07T15:30:01.469080-06:00 joel-VirtualBox CRON[37059]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-07T15:30:01.471477-06:00 joel-VirtualBox CRON[37059]: pam_unix(cron:session): session closed for user root
+2024-07-07T15:35:01.479200-06:00 joel-VirtualBox CRON[37163]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-07T15:35:01.481061-06:00 joel-VirtualBox CRON[37163]: pam_unix(cron:session): session closed for user root
+2024-07-07T15:39:01.488332-06:00 joel-VirtualBox CRON[37221]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-07T15:39:01.490697-06:00 joel-VirtualBox CRON[37221]: pam_unix(cron:session): session closed for user root
+2024-07-07T15:43:22.298412-06:00 joel-VirtualBox gdm-password]: gkr-pam: unlocked login keyring
+2024-07-07T15:44:07.839022-06:00 joel-VirtualBox sudo:     joel : TTY=pts/0 ; PWD=/etc/pam.d ; USER=root ; COMMAND=/usr/bin/apt-get update
+2024-07-07T15:44:07.843037-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session opened for user root(uid=0) by joel(uid=1000)
+2024-07-07T15:44:09.722229-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session closed for user root
+2024-07-07T15:44:37.705376-06:00 joel-VirtualBox sudo:     joel : TTY=pts/0 ; PWD=/etc/pam.d ; USER=root ; COMMAND=/usr/bin/apt-get install libpam0g-dev libpam-runtime
+2024-07-07T15:44:37.706492-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session opened for user root(uid=0) by joel(uid=1000)
+2024-07-07T15:44:41.177094-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session closed for user root
+2024-07-07T15:44:48.663608-06:00 joel-VirtualBox sudo:     joel : TTY=pts/0 ; PWD=/etc/pam.d ; USER=root ; COMMAND=/usr/bin/apt-get install libpam-ldapd
+2024-07-07T15:44:48.664660-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session opened for user root(uid=0) by joel(uid=1000)
+2024-07-07T15:45:01.499921-06:00 joel-VirtualBox CRON[37990]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-07T15:45:01.502672-06:00 joel-VirtualBox CRON[37990]: pam_unix(cron:session): session closed for user root
+2024-07-07T15:45:14.077382-06:00 joel-VirtualBox groupadd[38162]: group added to /etc/group: name=nslcd, GID=125
+2024-07-07T15:45:14.079618-06:00 joel-VirtualBox groupadd[38162]: group added to /etc/gshadow: name=nslcd
+2024-07-07T15:45:14.081442-06:00 joel-VirtualBox groupadd[38162]: new group: name=nslcd, GID=125
+2024-07-07T15:45:14.094037-06:00 joel-VirtualBox useradd[38169]: new user: name=nslcd, UID=123, GID=125, home=/run/nslcd, shell=/usr/sbin/nologin, from=none
+2024-07-07T15:45:14.106827-06:00 joel-VirtualBox chfn[38176]: changed user 'nslcd' information
+2024-07-07T15:45:15.739056-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session closed for user root
+2024-07-07T15:45:27.599380-06:00 joel-VirtualBox pkexec: pam_unix(polkit-1:session): session opened for user root(uid=0) by joel(uid=1000)
+2024-07-07T15:45:27.599851-06:00 joel-VirtualBox pkexec[38507]: joel: Executing command [USER=root] [TTY=unknown] [CWD=/home/joel] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+2024-07-07T15:45:39.025134-06:00 joel-VirtualBox sudo:     joel : TTY=pts/0 ; PWD=/etc/pam.d ; USER=root ; COMMAND=/usr/bin/nano common-auth
+2024-07-07T15:45:39.025610-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session opened for user root(uid=0) by joel(uid=1000)
+2024-07-07T15:51:10.212764-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session closed for user root
+2024-07-07T15:51:21.455995-06:00 joel-VirtualBox sudo:     joel : TTY=pts/0 ; PWD=/etc/pam.d ; USER=root ; COMMAND=/usr/bin/nano common-account
+2024-07-07T15:51:21.457243-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session opened for user root(uid=0) by joel(uid=1000)
+2024-07-07T15:52:05.814145-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session closed for user root
+2024-07-07T15:52:13.038796-06:00 joel-VirtualBox sudo:     joel : TTY=pts/0 ; PWD=/etc/pam.d ; USER=root ; COMMAND=/usr/bin/nano common-session
+2024-07-07T15:52:13.040789-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session opened for user root(uid=0) by joel(uid=1000)
+2024-07-07T15:52:54.543533-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session closed for user root
+2024-07-07T15:53:16.599046-06:00 joel-VirtualBox sudo:     joel : TTY=pts/0 ; PWD=/etc/pam.d ; USER=root ; COMMAND=/usr/bin/nano common-auth
+2024-07-07T15:53:16.599642-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session opened for user root(uid=0) by joel(uid=1000)
+2024-07-07T15:53:50.233743-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session closed for user root
+2024-07-07T15:54:11.745405-06:00 joel-VirtualBox sudo:     joel : TTY=pts/0 ; PWD=/etc/security ; USER=root ; COMMAND=/usr/bin/touch check_time.sh
+2024-07-07T15:54:11.746102-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session opened for user root(uid=0) by joel(uid=1000)
+2024-07-07T15:54:11.748457-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session closed for user root
+2024-07-07T15:54:22.867854-06:00 joel-VirtualBox sudo:     joel : TTY=pts/0 ; PWD=/etc/security ; USER=root ; COMMAND=/usr/bin/nano check_time.sh
+2024-07-07T15:54:22.868524-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session opened for user root(uid=0) by joel(uid=1000)
+2024-07-07T15:55:01.512663-06:00 joel-VirtualBox CRON[38691]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-07T15:55:01.515378-06:00 joel-VirtualBox CRON[38691]: pam_unix(cron:session): session closed for user root
+2024-07-07T15:56:02.090710-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session closed for user root
+2024-07-07T15:56:11.145287-06:00 joel-VirtualBox sudo:     joel : TTY=pts/0 ; PWD=/etc/security ; USER=root ; COMMAND=/usr/bin/chmod +x check_time.sh
+2024-07-07T15:56:11.146523-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session opened for user root(uid=0) by joel(uid=1000)
+2024-07-07T15:56:11.148583-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session closed for user root
+2024-07-07T15:56:42.400049-06:00 joel-VirtualBox sudo:     joel : TTY=pts/0 ; PWD=/etc/pam.d ; USER=root ; COMMAND=/usr/bin/nano common_auth
+2024-07-07T15:56:42.400788-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session opened for user root(uid=0) by joel(uid=1000)
+2024-07-07T15:56:51.764669-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session closed for user root
+2024-07-07T15:57:34.099840-06:00 joel-VirtualBox sudo:     joel : TTY=pts/0 ; PWD=/etc/pam.d ; USER=root ; COMMAND=/usr/bin/nano common_auth
+2024-07-07T15:57:34.100149-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session opened for user root(uid=0) by joel(uid=1000)
+2024-07-07T15:57:54.326645-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session closed for user root
+2024-07-09T17:47:06.072412-06:00 joel-VirtualBox sudo: pam_exec(sudo:auth): execve(/etc/security/check_time.sh,...) failed: Exec format error
+2024-07-09T17:47:06.072877-06:00 joel-VirtualBox sudo: pam_exec(sudo:auth): /etc/security/check_time.sh failed: exit code 8
+2024-07-09T17:47:14.777761-06:00 joel-VirtualBox sudo:     joel : PAM authentication error: Unknown error -1 ; TTY=pts/0 ; PWD=/etc/pam.d ; USER=root ; COMMAND=/usr/bin/nano common-account
+2024-07-09T17:47:29.442989-06:00 joel-VirtualBox sudo: pam_exec(sudo:auth): execve(/etc/security/check_time.sh,...) failed: Exec format error
+2024-07-09T17:47:29.443360-06:00 joel-VirtualBox sudo: pam_exec(sudo:auth): /etc/security/check_time.sh failed: exit code 8
+2024-07-09T17:47:36.701160-06:00 joel-VirtualBox sudo:     joel : PAM authentication error: Unknown error -1 ; TTY=pts/0 ; PWD=/etc/pam.d ; USER=root ; COMMAND=/usr/bin/nano common-account
+2024-07-09T17:47:39.049689-06:00 joel-VirtualBox sudo: pam_exec(sudo:auth): execve(/etc/security/check_time.sh,...) failed: Exec format error
+2024-07-09T17:47:39.049982-06:00 joel-VirtualBox sudo: pam_exec(sudo:auth): /etc/security/check_time.sh failed: exit code 8
+2024-07-09T17:47:40.531872-06:00 joel-VirtualBox sudo: pam_unix(sudo:auth): authentication failure; logname=joel uid=1000 euid=0 tty=/dev/pts/0 ruser=joel rhost=  user=joel
+2024-07-09T17:47:42.295062-06:00 joel-VirtualBox sudo:     joel : PAM authentication error: Unknown error -1 ; TTY=pts/0 ; PWD=/etc/pam.d ; USER=root ; COMMAND=/usr/bin/nano common-account
+2024-07-09T17:48:54.422043-06:00 joel-VirtualBox sudo: pam_exec(sudo:auth): execve(/etc/security/check_time.sh,...) failed: Exec format error
+2024-07-09T17:48:54.423045-06:00 joel-VirtualBox sudo: pam_exec(sudo:auth): /etc/security/check_time.sh failed: exit code 8
+2024-07-09T17:49:02.091136-06:00 joel-VirtualBox sudo:     joel : PAM authentication error: Unknown error -1 ; TTY=pts/0 ; PWD=/etc/security ; USER=root ; COMMAND=/usr/bin/nano check_time.sh
+2024-07-09T17:49:18.218804-06:00 joel-VirtualBox pkexec: pam_unix(polkit-1:session): session opened for user root(uid=0) by joel(uid=1000)
+2024-07-09T17:49:18.219259-06:00 joel-VirtualBox pkexec[40743]: joel: Executing command [USER=root] [TTY=unknown] [CWD=/home/joel] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+2024-07-09T17:50:42.101037-06:00 joel-VirtualBox sudo: pam_exec(sudo:auth): execve(/etc/security/check_time.sh,...) failed: Exec format error
+2024-07-09T17:50:42.103302-06:00 joel-VirtualBox sudo: pam_exec(sudo:auth): /etc/security/check_time.sh failed: exit code 8
+2024-07-09T17:50:45.570028-06:00 joel-VirtualBox sudo: pam_unix(sudo:auth): authentication failure; logname=joel uid=1000 euid=0 tty=/dev/pts/0 ruser=joel rhost=  user=joel
+2024-07-09T17:50:47.793720-06:00 joel-VirtualBox sudo:     joel : PAM authentication error: Unknown error -1 ; TTY=pts/0 ; PWD=/etc ; USER=root ; COMMAND=/usr/bin/nano rsyslog.conf
+2024-07-09T17:50:52.468966-06:00 joel-VirtualBox sudo: pam_exec(sudo:auth): execve(/etc/security/check_time.sh,...) failed: Exec format error
+2024-07-09T17:50:52.469250-06:00 joel-VirtualBox sudo: pam_exec(sudo:auth): /etc/security/check_time.sh failed: exit code 8
+2024-07-09T17:50:58.777425-06:00 joel-VirtualBox sudo:     joel : PAM authentication error: Unknown error -1 ; TTY=pts/0 ; PWD=/etc ; USER=root ; COMMAND=/usr/bin/nano rsyslog.conf
+2024-07-09T17:53:04.460524-06:00 joel-VirtualBox sudo: pam_exec(sudo:auth): execve(/etc/security/check_time.sh,...) failed: Exec format error
+2024-07-09T17:53:04.461017-06:00 joel-VirtualBox sudo: pam_exec(sudo:auth): /etc/security/check_time.sh failed: exit code 8
+2024-07-09T17:53:09.071432-06:00 joel-VirtualBox sudo: pam_unix(sudo:auth): authentication failure; logname=joel uid=1000 euid=0 tty=/dev/pts/0 ruser=joel rhost=  user=joel
+2024-07-09T17:53:11.453034-06:00 joel-VirtualBox sudo:     joel : PAM authentication error: Unknown error -1 ; TTY=pts/0 ; PWD=/etc/pam.d ; USER=root ; COMMAND=/usr/bin/nano common-auth
+2024-07-09T17:53:14.320490-06:00 joel-VirtualBox sudo: pam_exec(sudo:auth): execve(/etc/security/check_time.sh,...) failed: Exec format error
+2024-07-09T17:53:14.320871-06:00 joel-VirtualBox sudo: pam_exec(sudo:auth): /etc/security/check_time.sh failed: exit code 8
+2024-07-09T17:53:19.815287-06:00 joel-VirtualBox sudo:     joel : PAM authentication error: Unknown error -1 ; TTY=pts/0 ; PWD=/etc/pam.d ; USER=root ; COMMAND=/usr/bin/nano common-auth
+2024-07-09T17:54:29.421384-06:00 joel-VirtualBox sudo: pam_exec(sudo:auth): execve(/etc/security/check_time.sh,...) failed: Exec format error
+2024-07-09T17:54:29.421797-06:00 joel-VirtualBox sudo: pam_exec(sudo:auth): /etc/security/check_time.sh failed: exit code 8
+2024-07-09T17:55:01.037621-06:00 joel-VirtualBox CRON[40873]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-09T17:55:01.039499-06:00 joel-VirtualBox CRON[40873]: pam_unix(cron:session): session closed for user root
+2024-07-09T18:15:01.150791-06:00 joel-VirtualBox CRON[41188]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-09T18:15:01.152551-06:00 joel-VirtualBox CRON[41188]: pam_unix(cron:session): session closed for user root
+2024-07-09T18:17:01.159527-06:00 joel-VirtualBox CRON[41230]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-09T18:17:01.162776-06:00 joel-VirtualBox CRON[41230]: pam_unix(cron:session): session closed for user root
+2024-07-09T18:25:01.182445-06:00 joel-VirtualBox CRON[41341]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-09T18:25:01.184852-06:00 joel-VirtualBox CRON[41341]: pam_unix(cron:session): session closed for user root
+2024-07-09T18:30:01.195741-06:00 joel-VirtualBox CRON[41406]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-09T18:30:01.197391-06:00 joel-VirtualBox CRON[41406]: pam_unix(cron:session): session closed for user root
+2024-07-09T18:35:01.208815-06:00 joel-VirtualBox CRON[41476]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-09T18:35:01.211638-06:00 joel-VirtualBox CRON[41476]: pam_unix(cron:session): session closed for user root
+2024-07-09T18:39:01.220321-06:00 joel-VirtualBox CRON[41529]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-09T18:39:01.222107-06:00 joel-VirtualBox CRON[41529]: pam_unix(cron:session): session closed for user root
+2024-07-09T18:45:01.235562-06:00 joel-VirtualBox CRON[41669]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-09T18:45:01.238092-06:00 joel-VirtualBox CRON[41669]: pam_unix(cron:session): session closed for user root
+2024-07-09T18:55:01.256537-06:00 joel-VirtualBox CRON[41816]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-09T18:55:01.259350-06:00 joel-VirtualBox CRON[41816]: pam_unix(cron:session): session closed for user root
+2024-07-09T19:05:01.276582-06:00 joel-VirtualBox CRON[42100]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-09T19:05:01.279119-06:00 joel-VirtualBox CRON[42100]: pam_unix(cron:session): session closed for user root
+2024-07-09T19:09:01.288398-06:00 joel-VirtualBox CRON[42158]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-09T19:09:01.290069-06:00 joel-VirtualBox CRON[42158]: pam_unix(cron:session): session closed for user root
+2024-07-09T19:15:01.298938-06:00 joel-VirtualBox CRON[42300]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-09T19:15:01.301674-06:00 joel-VirtualBox CRON[42300]: pam_unix(cron:session): session closed for user root
+2024-07-09T19:17:01.310072-06:00 joel-VirtualBox CRON[42327]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-09T19:17:01.312498-06:00 joel-VirtualBox CRON[42327]: pam_unix(cron:session): session closed for user root
+2024-07-09T19:25:01.329363-06:00 joel-VirtualBox CRON[42437]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-09T19:25:01.332374-06:00 joel-VirtualBox CRON[42437]: pam_unix(cron:session): session closed for user root
+2024-07-09T19:30:01.345338-06:00 joel-VirtualBox CRON[42504]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-09T19:30:01.347600-06:00 joel-VirtualBox CRON[42504]: pam_unix(cron:session): session closed for user root
+2024-07-09T19:35:01.359085-06:00 joel-VirtualBox CRON[42573]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-09T19:35:01.361121-06:00 joel-VirtualBox CRON[42573]: pam_unix(cron:session): session closed for user root
+2024-07-09T19:39:01.371115-06:00 joel-VirtualBox CRON[42626]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-09T19:39:01.372416-06:00 joel-VirtualBox CRON[42626]: pam_unix(cron:session): session closed for user root
+2024-07-09T19:45:01.388382-06:00 joel-VirtualBox CRON[42769]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-09T19:45:01.390387-06:00 joel-VirtualBox CRON[42769]: pam_unix(cron:session): session closed for user root
+2024-07-09T19:55:01.416212-06:00 joel-VirtualBox CRON[42908]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-09T19:55:01.419131-06:00 joel-VirtualBox CRON[42908]: pam_unix(cron:session): session closed for user root
+2024-07-09T20:05:01.435578-06:00 joel-VirtualBox CRON[43040]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-09T20:05:01.438148-06:00 joel-VirtualBox CRON[43040]: pam_unix(cron:session): session closed for user root
+2024-07-09T20:09:01.450715-06:00 joel-VirtualBox CRON[43098]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-09T20:09:01.452148-06:00 joel-VirtualBox CRON[43098]: pam_unix(cron:session): session closed for user root
+2024-07-09T20:15:01.467103-06:00 joel-VirtualBox CRON[43242]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-09T20:15:01.470345-06:00 joel-VirtualBox CRON[43242]: pam_unix(cron:session): session closed for user root
+2024-07-09T20:17:01.476210-06:00 joel-VirtualBox CRON[43270]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-09T20:17:01.478427-06:00 joel-VirtualBox CRON[43270]: pam_unix(cron:session): session closed for user root
+2024-07-09T20:25:01.497302-06:00 joel-VirtualBox CRON[43471]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-09T20:25:01.498839-06:00 joel-VirtualBox CRON[43471]: pam_unix(cron:session): session closed for user root
+2024-07-09T20:30:01.513484-06:00 joel-VirtualBox CRON[43536]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-09T20:30:01.516605-06:00 joel-VirtualBox CRON[43536]: pam_unix(cron:session): session closed for user root
+2024-07-09T20:35:01.526147-06:00 joel-VirtualBox CRON[43605]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-09T20:35:01.527816-06:00 joel-VirtualBox CRON[43605]: pam_unix(cron:session): session closed for user root
+2024-07-09T20:39:01.535474-06:00 joel-VirtualBox CRON[43667]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-09T20:39:01.536523-06:00 joel-VirtualBox CRON[43667]: pam_unix(cron:session): session closed for user root
+2024-07-09T20:45:01.548403-06:00 joel-VirtualBox CRON[43807]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-09T20:45:01.550298-06:00 joel-VirtualBox CRON[43807]: pam_unix(cron:session): session closed for user root
+2024-07-09T20:55:01.574020-06:00 joel-VirtualBox CRON[43942]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-09T20:55:01.575630-06:00 joel-VirtualBox CRON[43942]: pam_unix(cron:session): session closed for user root
+2024-07-09T21:05:01.601864-06:00 joel-VirtualBox CRON[44126]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-09T21:05:01.604561-06:00 joel-VirtualBox CRON[44126]: pam_unix(cron:session): session closed for user root
+2024-07-09T21:09:01.616714-06:00 joel-VirtualBox CRON[44185]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-09T21:09:01.618625-06:00 joel-VirtualBox CRON[44185]: pam_unix(cron:session): session closed for user root
+2024-07-09T21:15:01.630643-06:00 joel-VirtualBox CRON[44326]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-09T21:15:01.632415-06:00 joel-VirtualBox CRON[44326]: pam_unix(cron:session): session closed for user root
+2024-07-09T21:17:01.638080-06:00 joel-VirtualBox CRON[44354]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-09T21:17:01.639830-06:00 joel-VirtualBox CRON[44354]: pam_unix(cron:session): session closed for user root
+2024-07-09T21:25:01.652972-06:00 joel-VirtualBox CRON[44460]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-09T21:25:01.655626-06:00 joel-VirtualBox CRON[44460]: pam_unix(cron:session): session closed for user root
+2024-07-09T21:30:01.668340-06:00 joel-VirtualBox CRON[44526]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-09T21:30:01.670145-06:00 joel-VirtualBox CRON[44526]: pam_unix(cron:session): session closed for user root
+2024-07-09T21:35:01.684009-06:00 joel-VirtualBox CRON[44595]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-09T21:35:01.686651-06:00 joel-VirtualBox CRON[44595]: pam_unix(cron:session): session closed for user root
+2024-07-09T21:39:01.697000-06:00 joel-VirtualBox CRON[44649]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-09T21:39:01.698641-06:00 joel-VirtualBox CRON[44649]: pam_unix(cron:session): session closed for user root
+2024-07-09T21:45:01.711243-06:00 joel-VirtualBox CRON[44790]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-09T21:45:01.713202-06:00 joel-VirtualBox CRON[44790]: pam_unix(cron:session): session closed for user root
+2024-07-09T21:55:01.732673-06:00 joel-VirtualBox CRON[44928]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-09T21:55:01.734968-06:00 joel-VirtualBox CRON[44928]: pam_unix(cron:session): session closed for user root
+2024-07-09T22:05:01.760472-06:00 joel-VirtualBox CRON[45059]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-09T22:05:01.762408-06:00 joel-VirtualBox CRON[45059]: pam_unix(cron:session): session closed for user root
+2024-07-09T22:09:01.770722-06:00 joel-VirtualBox CRON[45116]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-09T22:09:01.772605-06:00 joel-VirtualBox CRON[45116]: pam_unix(cron:session): session closed for user root
+2024-07-10T11:33:47.415601-06:00 joel-VirtualBox pkexec: pam_unix(polkit-1:session): session opened for user root(uid=0) by joel(uid=1000)
+2024-07-10T11:33:47.416780-06:00 joel-VirtualBox pkexec[46078]: joel: Executing command [USER=root] [TTY=unknown] [CWD=/home/joel] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+2024-07-10T11:35:01.795081-06:00 joel-VirtualBox CRON[46104]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-10T11:35:01.796608-06:00 joel-VirtualBox CRON[46104]: pam_unix(cron:session): session closed for user root
+2024-07-10T11:39:01.804291-06:00 joel-VirtualBox CRON[46242]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-10T11:39:01.805634-06:00 joel-VirtualBox CRON[46242]: pam_unix(cron:session): session closed for user root
+2024-07-10T11:45:01.818907-06:00 joel-VirtualBox CRON[46322]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-10T11:45:01.820662-06:00 joel-VirtualBox CRON[46322]: pam_unix(cron:session): session closed for user root
+2024-07-10T11:55:01.835382-06:00 joel-VirtualBox CRON[46460]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-10T11:55:01.837613-06:00 joel-VirtualBox CRON[46460]: pam_unix(cron:session): session closed for user root
+2024-07-10T12:05:01.856657-06:00 joel-VirtualBox CRON[46642]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-10T12:05:01.858285-06:00 joel-VirtualBox CRON[46642]: pam_unix(cron:session): session closed for user root
+2024-07-10T12:09:01.866011-06:00 joel-VirtualBox CRON[46696]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-10T12:09:01.867575-06:00 joel-VirtualBox CRON[46696]: pam_unix(cron:session): session closed for user root
+2024-07-10T12:15:01.877966-06:00 joel-VirtualBox CRON[46995]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-10T12:15:01.879700-06:00 joel-VirtualBox CRON[46995]: pam_unix(cron:session): session closed for user root
+2024-07-10T12:17:01.885329-06:00 joel-VirtualBox CRON[47023]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-10T12:17:01.887229-06:00 joel-VirtualBox CRON[47023]: pam_unix(cron:session): session closed for user root
+2024-07-10T12:25:01.901703-06:00 joel-VirtualBox CRON[47128]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-10T12:25:01.903726-06:00 joel-VirtualBox CRON[47128]: pam_unix(cron:session): session closed for user root
+2024-07-10T12:30:01.914363-06:00 joel-VirtualBox CRON[47197]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-10T12:30:01.916667-06:00 joel-VirtualBox CRON[47197]: pam_unix(cron:session): session closed for user root
+2024-07-10T12:35:01.923955-06:00 joel-VirtualBox CRON[47519]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-10T12:35:01.925682-06:00 joel-VirtualBox CRON[47519]: pam_unix(cron:session): session closed for user root
+2024-07-10T12:39:01.934053-06:00 joel-VirtualBox CRON[47581]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-10T12:39:01.935341-06:00 joel-VirtualBox CRON[47581]: pam_unix(cron:session): session closed for user root
+2024-07-10T12:45:01.945078-06:00 joel-VirtualBox CRON[47723]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-10T12:45:01.946965-06:00 joel-VirtualBox CRON[47723]: pam_unix(cron:session): session closed for user root
+2024-07-10T12:55:01.962609-06:00 joel-VirtualBox CRON[47852]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-10T12:55:01.964238-06:00 joel-VirtualBox CRON[47852]: pam_unix(cron:session): session closed for user root
+2024-07-10T13:05:01.975178-06:00 joel-VirtualBox CRON[47988]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-10T13:05:01.977796-06:00 joel-VirtualBox CRON[47988]: pam_unix(cron:session): session closed for user root
+2024-07-10T13:09:01.983355-06:00 joel-VirtualBox CRON[48048]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-10T13:09:01.985337-06:00 joel-VirtualBox CRON[48048]: pam_unix(cron:session): session closed for user root
+2024-07-10T16:45:01.858196-06:00 joel-VirtualBox CRON[48344]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-10T16:45:01.861316-06:00 joel-VirtualBox CRON[48344]: pam_unix(cron:session): session closed for user root
+2024-07-10T16:55:01.875372-06:00 joel-VirtualBox CRON[48476]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-10T16:55:01.877218-06:00 joel-VirtualBox CRON[48476]: pam_unix(cron:session): session closed for user root
+2024-07-10T17:05:01.897126-06:00 joel-VirtualBox CRON[48625]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-10T17:05:01.899271-06:00 joel-VirtualBox CRON[48625]: pam_unix(cron:session): session closed for user root
+2024-07-10T17:09:01.909757-06:00 joel-VirtualBox CRON[48677]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-10T17:09:01.911986-06:00 joel-VirtualBox CRON[48677]: pam_unix(cron:session): session closed for user root
+2024-07-10T17:15:01.926422-06:00 joel-VirtualBox CRON[48819]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-10T17:15:01.928343-06:00 joel-VirtualBox CRON[48819]: pam_unix(cron:session): session closed for user root
+2024-07-10T17:17:01.935687-06:00 joel-VirtualBox CRON[48847]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-10T17:17:01.937671-06:00 joel-VirtualBox CRON[48847]: pam_unix(cron:session): session closed for user root
+2024-07-10T17:25:01.951986-06:00 joel-VirtualBox CRON[48953]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-10T17:25:01.953450-06:00 joel-VirtualBox CRON[48953]: pam_unix(cron:session): session closed for user root
+2024-07-10T17:30:01.961943-06:00 joel-VirtualBox CRON[49022]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-10T17:30:01.963596-06:00 joel-VirtualBox CRON[49022]: pam_unix(cron:session): session closed for user root
+2024-07-10T17:35:01.969505-06:00 joel-VirtualBox CRON[49109]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-10T17:35:01.971649-06:00 joel-VirtualBox CRON[49109]: pam_unix(cron:session): session closed for user root
+2024-07-10T17:39:01.978160-06:00 joel-VirtualBox CRON[49163]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-10T17:39:01.979120-06:00 joel-VirtualBox CRON[49163]: pam_unix(cron:session): session closed for user root
+2024-07-10T17:45:01.990706-06:00 joel-VirtualBox CRON[49307]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-10T17:45:01.993202-06:00 joel-VirtualBox CRON[49307]: pam_unix(cron:session): session closed for user root
+2024-07-10T17:55:01.011755-06:00 joel-VirtualBox CRON[49436]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-10T17:55:01.014029-06:00 joel-VirtualBox CRON[49436]: pam_unix(cron:session): session closed for user root
+2024-07-10T18:05:01.029501-06:00 joel-VirtualBox CRON[49619]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-10T18:05:01.031999-06:00 joel-VirtualBox CRON[49619]: pam_unix(cron:session): session closed for user root
+2024-07-10T18:09:01.040354-06:00 joel-VirtualBox CRON[49673]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-10T18:09:01.042870-06:00 joel-VirtualBox CRON[49673]: pam_unix(cron:session): session closed for user root
+2024-07-10T18:15:01.057582-06:00 joel-VirtualBox CRON[49830]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-10T18:15:01.061212-06:00 joel-VirtualBox CRON[49830]: pam_unix(cron:session): session closed for user root
+2024-07-10T18:17:01.065776-06:00 joel-VirtualBox CRON[49858]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-10T18:17:01.067241-06:00 joel-VirtualBox CRON[49858]: pam_unix(cron:session): session closed for user root
+2024-07-10T18:25:01.078974-06:00 joel-VirtualBox CRON[49965]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-10T18:25:01.082099-06:00 joel-VirtualBox CRON[49965]: pam_unix(cron:session): session closed for user root
+2024-07-10T18:30:01.092757-06:00 joel-VirtualBox CRON[50032]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-10T18:30:01.094360-06:00 joel-VirtualBox CRON[50032]: pam_unix(cron:session): session closed for user root
+2024-07-10T18:35:01.103372-06:00 joel-VirtualBox CRON[50103]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-10T18:35:01.105020-06:00 joel-VirtualBox CRON[50103]: pam_unix(cron:session): session closed for user root
+2024-07-10T18:39:01.115363-06:00 joel-VirtualBox CRON[50173]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-10T18:39:01.117237-06:00 joel-VirtualBox CRON[50173]: pam_unix(cron:session): session closed for user root
+2024-07-10T18:45:01.133146-06:00 joel-VirtualBox CRON[50317]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-10T18:45:01.135694-06:00 joel-VirtualBox CRON[50317]: pam_unix(cron:session): session closed for user root
+2024-07-10T18:55:01.150587-06:00 joel-VirtualBox CRON[50446]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-10T18:55:01.153252-06:00 joel-VirtualBox CRON[50446]: pam_unix(cron:session): session closed for user root
+2024-07-10T19:05:01.165959-06:00 joel-VirtualBox CRON[50596]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-10T19:05:01.167631-06:00 joel-VirtualBox CRON[50596]: pam_unix(cron:session): session closed for user root
+2024-07-10T19:09:01.173921-06:00 joel-VirtualBox CRON[50648]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-10T19:09:01.175589-06:00 joel-VirtualBox CRON[50648]: pam_unix(cron:session): session closed for user root
+2024-07-10T19:15:01.184982-06:00 joel-VirtualBox CRON[50790]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-10T19:15:01.187846-06:00 joel-VirtualBox CRON[50790]: pam_unix(cron:session): session closed for user root
+2024-07-10T19:17:01.197113-06:00 joel-VirtualBox CRON[50819]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-10T19:17:01.199515-06:00 joel-VirtualBox CRON[50819]: pam_unix(cron:session): session closed for user root
+2024-07-10T19:25:01.211898-06:00 joel-VirtualBox CRON[50925]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-10T19:25:01.214631-06:00 joel-VirtualBox CRON[50925]: pam_unix(cron:session): session closed for user root
+2024-07-10T19:30:01.224927-06:00 joel-VirtualBox CRON[50994]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-10T19:30:01.226586-06:00 joel-VirtualBox CRON[50994]: pam_unix(cron:session): session closed for user root
+2024-07-10T19:35:01.237465-06:00 joel-VirtualBox CRON[51073]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-10T19:35:01.240768-06:00 joel-VirtualBox CRON[51073]: pam_unix(cron:session): session closed for user root
+2024-07-10T19:39:01.248013-06:00 joel-VirtualBox CRON[51126]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-10T19:39:01.249087-06:00 joel-VirtualBox CRON[51126]: pam_unix(cron:session): session closed for user root
+2024-07-10T19:45:01.261375-06:00 joel-VirtualBox CRON[51271]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-10T19:45:01.263539-06:00 joel-VirtualBox CRON[51271]: pam_unix(cron:session): session closed for user root
+2024-07-10T19:55:01.279476-06:00 joel-VirtualBox CRON[51403]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-10T19:55:01.281284-06:00 joel-VirtualBox CRON[51403]: pam_unix(cron:session): session closed for user root
+2024-07-10T20:05:01.296881-06:00 joel-VirtualBox CRON[51535]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-10T20:05:01.298649-06:00 joel-VirtualBox CRON[51535]: pam_unix(cron:session): session closed for user root
+2024-07-10T20:09:01.309813-06:00 joel-VirtualBox CRON[51588]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-10T20:09:01.311847-06:00 joel-VirtualBox CRON[51588]: pam_unix(cron:session): session closed for user root
+2024-07-10T20:15:01.322248-06:00 joel-VirtualBox CRON[51729]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-10T20:15:01.324678-06:00 joel-VirtualBox CRON[51729]: pam_unix(cron:session): session closed for user root
+2024-07-10T20:17:01.330144-06:00 joel-VirtualBox CRON[51757]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-10T20:17:01.331516-06:00 joel-VirtualBox CRON[51757]: pam_unix(cron:session): session closed for user root
+2024-07-10T20:25:01.348321-06:00 joel-VirtualBox CRON[51862]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-10T20:25:01.350630-06:00 joel-VirtualBox CRON[51862]: pam_unix(cron:session): session closed for user root
+2024-07-10T20:30:01.359917-06:00 joel-VirtualBox CRON[51931]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-10T20:30:01.362385-06:00 joel-VirtualBox CRON[51931]: pam_unix(cron:session): session closed for user root
+2024-07-10T20:35:01.369559-06:00 joel-VirtualBox CRON[52000]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-10T20:35:01.370998-06:00 joel-VirtualBox CRON[52000]: pam_unix(cron:session): session closed for user root
+2024-07-10T20:39:01.377087-06:00 joel-VirtualBox CRON[52052]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-10T20:39:01.378477-06:00 joel-VirtualBox CRON[52052]: pam_unix(cron:session): session closed for user root
+2024-07-10T20:45:01.386904-06:00 joel-VirtualBox CRON[52197]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-10T20:45:01.388564-06:00 joel-VirtualBox CRON[52197]: pam_unix(cron:session): session closed for user root
+2024-07-10T20:55:01.400690-06:00 joel-VirtualBox CRON[52334]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-10T20:55:01.402699-06:00 joel-VirtualBox CRON[52334]: pam_unix(cron:session): session closed for user root
+2024-07-10T21:05:01.415699-06:00 joel-VirtualBox CRON[52516]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-10T21:05:01.417601-06:00 joel-VirtualBox CRON[52516]: pam_unix(cron:session): session closed for user root
+2024-07-10T21:09:01.424010-06:00 joel-VirtualBox CRON[52569]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-10T21:09:01.425790-06:00 joel-VirtualBox CRON[52569]: pam_unix(cron:session): session closed for user root
+2024-07-10T21:15:01.431966-06:00 joel-VirtualBox CRON[52711]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-10T21:15:01.434776-06:00 joel-VirtualBox CRON[52711]: pam_unix(cron:session): session closed for user root
+2024-07-10T21:17:01.439447-06:00 joel-VirtualBox CRON[52738]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-10T21:17:01.440895-06:00 joel-VirtualBox CRON[52738]: pam_unix(cron:session): session closed for user root
+2024-07-10T21:25:01.451043-06:00 joel-VirtualBox CRON[52844]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-10T21:25:01.453380-06:00 joel-VirtualBox CRON[52844]: pam_unix(cron:session): session closed for user root
+2024-07-10T21:30:01.460134-06:00 joel-VirtualBox CRON[52914]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-10T21:30:01.461639-06:00 joel-VirtualBox CRON[52914]: pam_unix(cron:session): session closed for user root
+2024-07-10T21:35:01.468022-06:00 joel-VirtualBox CRON[52984]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-10T21:35:01.469832-06:00 joel-VirtualBox CRON[52984]: pam_unix(cron:session): session closed for user root
+2024-07-10T21:39:01.474812-06:00 joel-VirtualBox CRON[53036]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-10T21:39:01.475799-06:00 joel-VirtualBox CRON[53036]: pam_unix(cron:session): session closed for user root
+2024-07-10T21:45:01.484504-06:00 joel-VirtualBox CRON[53187]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-10T21:45:01.486343-06:00 joel-VirtualBox CRON[53187]: pam_unix(cron:session): session closed for user root
+2024-07-10T21:55:01.494929-06:00 joel-VirtualBox CRON[53317]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-10T21:55:01.496627-06:00 joel-VirtualBox CRON[53317]: pam_unix(cron:session): session closed for user root
+2024-07-10T22:05:01.504132-06:00 joel-VirtualBox CRON[53448]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-10T22:05:01.505808-06:00 joel-VirtualBox CRON[53448]: pam_unix(cron:session): session closed for user root
+2024-07-10T22:09:01.512232-06:00 joel-VirtualBox CRON[53500]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-10T22:09:01.513896-06:00 joel-VirtualBox CRON[53500]: pam_unix(cron:session): session closed for user root
+2024-07-10T22:15:01.520480-06:00 joel-VirtualBox CRON[53644]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-10T22:15:01.521973-06:00 joel-VirtualBox CRON[53644]: pam_unix(cron:session): session closed for user root
+2024-07-10T22:17:01.526594-06:00 joel-VirtualBox CRON[53672]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-10T22:17:01.528858-06:00 joel-VirtualBox CRON[53672]: pam_unix(cron:session): session closed for user root
+2024-07-10T22:25:01.538324-06:00 joel-VirtualBox CRON[53777]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-10T22:25:01.541135-06:00 joel-VirtualBox CRON[53777]: pam_unix(cron:session): session closed for user root
+2024-07-10T22:30:01.547640-06:00 joel-VirtualBox CRON[53845]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-10T22:30:01.549468-06:00 joel-VirtualBox CRON[53845]: pam_unix(cron:session): session closed for user root
+2024-07-10T22:35:01.554615-06:00 joel-VirtualBox CRON[53913]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-10T22:35:01.556335-06:00 joel-VirtualBox CRON[53913]: pam_unix(cron:session): session closed for user root
+2024-07-10T22:39:01.563167-06:00 joel-VirtualBox CRON[53965]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-10T22:39:01.564301-06:00 joel-VirtualBox CRON[53965]: pam_unix(cron:session): session closed for user root
+2024-07-10T22:45:01.571248-06:00 joel-VirtualBox CRON[54108]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-10T22:45:01.572740-06:00 joel-VirtualBox CRON[54108]: pam_unix(cron:session): session closed for user root
+2024-07-10T22:55:01.580619-06:00 joel-VirtualBox CRON[54236]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-10T22:55:01.582736-06:00 joel-VirtualBox CRON[54236]: pam_unix(cron:session): session closed for user root
+2024-07-10T23:05:01.592452-06:00 joel-VirtualBox CRON[54375]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-10T23:05:01.594636-06:00 joel-VirtualBox CRON[54375]: pam_unix(cron:session): session closed for user root
+2024-07-10T23:09:01.599986-06:00 joel-VirtualBox CRON[54427]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-10T23:09:01.601089-06:00 joel-VirtualBox CRON[54427]: pam_unix(cron:session): session closed for user root
+2024-07-10T23:15:01.608969-06:00 joel-VirtualBox CRON[54569]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-10T23:15:01.610863-06:00 joel-VirtualBox CRON[54569]: pam_unix(cron:session): session closed for user root
+2024-07-10T23:17:01.614854-06:00 joel-VirtualBox CRON[54597]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-10T23:17:01.616670-06:00 joel-VirtualBox CRON[54597]: pam_unix(cron:session): session closed for user root
+2024-07-10T23:25:01.626010-06:00 joel-VirtualBox CRON[54704]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-10T23:25:01.628437-06:00 joel-VirtualBox CRON[54704]: pam_unix(cron:session): session closed for user root
+2024-07-10T23:30:01.636272-06:00 joel-VirtualBox CRON[54771]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-10T23:30:01.638013-06:00 joel-VirtualBox CRON[54771]: pam_unix(cron:session): session closed for user root
+2024-07-10T23:35:01.645216-06:00 joel-VirtualBox CRON[54848]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-10T23:35:01.647168-06:00 joel-VirtualBox CRON[54848]: pam_unix(cron:session): session closed for user root
+2024-07-10T23:39:01.652619-06:00 joel-VirtualBox CRON[54964]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-10T23:39:01.654108-06:00 joel-VirtualBox CRON[54964]: pam_unix(cron:session): session closed for user root
+2024-07-10T23:45:01.661993-06:00 joel-VirtualBox CRON[55045]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-10T23:45:01.664788-06:00 joel-VirtualBox CRON[55045]: pam_unix(cron:session): session closed for user root
+2024-07-10T23:55:01.672781-06:00 joel-VirtualBox CRON[55174]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-10T23:55:01.675637-06:00 joel-VirtualBox CRON[55174]: pam_unix(cron:session): session closed for user root
+2024-07-10T23:59:01.682385-06:00 joel-VirtualBox CRON[55227]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-10T23:59:01.684933-06:00 joel-VirtualBox CRON[55227]: pam_unix(cron:session): session closed for user root
+2024-07-11T00:05:01.690788-06:00 joel-VirtualBox CRON[55416]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-11T00:05:01.692740-06:00 joel-VirtualBox CRON[55416]: pam_unix(cron:session): session closed for user root
+2024-07-11T00:09:01.697881-06:00 joel-VirtualBox CRON[55480]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-11T00:09:01.699119-06:00 joel-VirtualBox CRON[55480]: pam_unix(cron:session): session closed for user root
+2024-07-11T00:15:01.707232-06:00 joel-VirtualBox CRON[55776]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-11T00:15:01.710218-06:00 joel-VirtualBox CRON[55776]: pam_unix(cron:session): session closed for user root
+2024-07-11T00:17:01.715350-06:00 joel-VirtualBox CRON[55804]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-11T00:17:01.717247-06:00 joel-VirtualBox CRON[55804]: pam_unix(cron:session): session closed for user root
+2024-07-11T00:25:01.725852-06:00 joel-VirtualBox CRON[55910]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-11T00:25:01.728475-06:00 joel-VirtualBox CRON[55910]: pam_unix(cron:session): session closed for user root
+2024-07-11T00:35:01.738161-06:00 joel-VirtualBox CRON[56042]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-11T00:35:01.740103-06:00 joel-VirtualBox CRON[56042]: pam_unix(cron:session): session closed for user root
+2024-07-11T00:39:01.745541-06:00 joel-VirtualBox CRON[56094]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-11T00:39:01.747453-06:00 joel-VirtualBox CRON[56094]: pam_unix(cron:session): session closed for user root
+2024-07-11T00:45:01.754609-06:00 joel-VirtualBox CRON[56240]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-11T00:45:01.756823-06:00 joel-VirtualBox CRON[56240]: pam_unix(cron:session): session closed for user root
+2024-07-11T00:55:01.766616-06:00 joel-VirtualBox CRON[56381]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-11T00:55:01.769598-06:00 joel-VirtualBox CRON[56381]: pam_unix(cron:session): session closed for user root
+2024-07-11T01:05:01.779216-06:00 joel-VirtualBox CRON[56512]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-11T01:05:01.781451-06:00 joel-VirtualBox CRON[56512]: pam_unix(cron:session): session closed for user root
+2024-07-11T01:09:01.787513-06:00 joel-VirtualBox CRON[56569]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-11T01:09:01.789377-06:00 joel-VirtualBox CRON[56569]: pam_unix(cron:session): session closed for user root
+2024-07-11T01:15:01.797482-06:00 joel-VirtualBox CRON[56714]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-11T01:15:01.799967-06:00 joel-VirtualBox CRON[56714]: pam_unix(cron:session): session closed for user root
+2024-07-11T01:17:01.805509-06:00 joel-VirtualBox CRON[56741]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-11T01:17:01.807982-06:00 joel-VirtualBox CRON[56741]: pam_unix(cron:session): session closed for user root
+2024-07-11T01:23:45.717390-06:00 joel-VirtualBox gdm-password]: pam_exec(gdm-password:auth): execve(/etc/security/check_time.sh,...) failed: Exec format error
+2024-07-11T01:23:45.717747-06:00 joel-VirtualBox gdm-password]: pam_exec(gdm-password:auth): /etc/security/check_time.sh failed: exit code 8
+2024-07-11T01:23:49.434666-06:00 joel-VirtualBox gdm-password]: pam_unix(gdm-password:auth): authentication failure; logname=joel uid=0 euid=0 tty=/dev/tty1 ruser= rhost=  user=joel
+2024-07-11T01:23:51.287378-06:00 joel-VirtualBox gdm-password]: PAM 1 more authentication failure; logname=joel uid=0 euid=0 tty=/dev/tty1 ruser= rhost=  user=joel
+2024-07-11T01:23:51.325849-06:00 joel-VirtualBox gdm-password]: pam_exec(gdm-password:auth): execve(/etc/security/check_time.sh,...) failed: Exec format error
+2024-07-11T01:23:51.326669-06:00 joel-VirtualBox gdm-password]: pam_exec(gdm-password:auth): /etc/security/check_time.sh failed: exit code 8
+2024-07-11T01:23:57.023186-06:00 joel-VirtualBox gdm-password]: gkr-pam: unlocked login keyring
+2024-07-11T01:23:59.050130-06:00 joel-VirtualBox gdm-password]: pam_exec(gdm-password:auth): execve(/etc/security/check_time.sh,...) failed: Exec format error
+2024-07-11T01:23:59.050369-06:00 joel-VirtualBox gdm-password]: pam_exec(gdm-password:auth): /etc/security/check_time.sh failed: exit code 8
+2024-07-11T01:24:05.488227-06:00 joel-VirtualBox gdm-password]: gkr-pam: unlocked login keyring
+2024-07-11T01:24:07.288398-06:00 joel-VirtualBox gdm-password]: pam_exec(gdm-password:auth): execve(/etc/security/check_time.sh,...) failed: Exec format error
+2024-07-11T01:24:07.289049-06:00 joel-VirtualBox gdm-password]: pam_exec(gdm-password:auth): /etc/security/check_time.sh failed: exit code 8
+2024-07-11T01:25:01.815629-06:00 joel-VirtualBox CRON[56944]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-11T01:25:01.817770-06:00 joel-VirtualBox CRON[56944]: pam_unix(cron:session): session closed for user root
+2024-07-11T01:26:10.063677-06:00 joel-VirtualBox gdm-password]: pam_exec(gdm-password:auth): execve(/etc/security/check_time.sh,...) failed: Exec format error
+2024-07-11T01:26:10.065673-06:00 joel-VirtualBox gdm-password]: pam_exec(gdm-password:auth): /etc/security/check_time.sh failed: exit code 8
+2024-07-11T01:29:09.936278-06:00 joel-VirtualBox gdm-password]: pam_unix(gdm-password:auth): conversation failed
+2024-07-11T01:29:09.936414-06:00 joel-VirtualBox gdm-password]: pam_unix(gdm-password:auth): auth could not identify password for [joel]
+2024-07-11T01:35:01.826889-06:00 joel-VirtualBox CRON[57097]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-11T01:35:01.828566-06:00 joel-VirtualBox CRON[57097]: pam_unix(cron:session): session closed for user root
+2024-07-11T01:39:01.834930-06:00 joel-VirtualBox CRON[57150]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-11T01:39:01.836429-06:00 joel-VirtualBox CRON[57150]: pam_unix(cron:session): session closed for user root
+2024-07-11T01:39:15.129704-06:00 joel-VirtualBox gdm-password]: pam_exec(gdm-password:auth): execve(/etc/security/check_time.sh,...) failed: Exec format error
+2024-07-11T01:39:15.129901-06:00 joel-VirtualBox gdm-password]: pam_exec(gdm-password:auth): /etc/security/check_time.sh failed: exit code 8
+2024-07-11T01:39:19.197483-06:00 joel-VirtualBox gdm-password]: gkr-pam: unlocked login keyring
+2024-07-11T01:39:20.749039-06:00 joel-VirtualBox gdm-password]: pam_exec(gdm-password:auth): execve(/etc/security/check_time.sh,...) failed: Exec format error
+2024-07-11T01:39:20.749923-06:00 joel-VirtualBox gdm-password]: pam_exec(gdm-password:auth): /etc/security/check_time.sh failed: exit code 8
+2024-07-11T01:40:22.536807-06:00 joel-VirtualBox gdm-password]: pam_exec(gdm-password:auth): execve(/etc/security/check_time.sh,...) failed: Exec format error
+2024-07-11T01:40:22.537326-06:00 joel-VirtualBox gdm-password]: pam_exec(gdm-password:auth): /etc/security/check_time.sh failed: exit code 8
+2024-07-13T13:49:47.472173-06:00 joel-VirtualBox systemd-logind[834]: New seat seat0.
+2024-07-13T13:49:47.472174-06:00 joel-VirtualBox systemd-logind[834]: Watching system buttons on /dev/input/event0 (Power Button)
+2024-07-13T13:49:47.472175-06:00 joel-VirtualBox systemd-logind[834]: Watching system buttons on /dev/input/event1 (Sleep Button)
+2024-07-13T13:49:47.472177-06:00 joel-VirtualBox systemd-logind[834]: Watching system buttons on /dev/input/event2 (AT Translated Set 2 keyboard)
+2024-07-13T13:49:47.472209-06:00 joel-VirtualBox polkitd[796]: Loading rules from directory /etc/polkit-1/rules.d
+2024-07-13T13:49:47.472210-06:00 joel-VirtualBox polkitd[796]: Loading rules from directory /usr/share/polkit-1/rules.d
+2024-07-13T13:49:47.472221-06:00 joel-VirtualBox polkitd[796]: Finished loading, compiling and executing 16 rules
+2024-07-13T13:49:47.472223-06:00 joel-VirtualBox polkitd[796]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+2024-07-13T13:49:48.321257-06:00 joel-VirtualBox gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session opened for user gdm(uid=120) by (uid=0)
+2024-07-13T13:49:48.357934-06:00 joel-VirtualBox systemd-logind[834]: New session c1 of user gdm.
+2024-07-13T13:49:48.382188-06:00 joel-VirtualBox (systemd): pam_unix(systemd-user:session): session opened for user gdm(uid=120) by gdm(uid=0)
+2024-07-13T13:49:49.701333-06:00 joel-VirtualBox polkitd[796]: Registered Authentication Agent for unix-session:c1 (system bus name :1.41 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+2024-07-13T13:52:20.537872-06:00 joel-VirtualBox systemd-logind[829]: New seat seat0.
+2024-07-13T13:52:20.537873-06:00 joel-VirtualBox systemd-logind[829]: Watching system buttons on /dev/input/event0 (Power Button)
+2024-07-13T13:52:20.537875-06:00 joel-VirtualBox systemd-logind[829]: Watching system buttons on /dev/input/event1 (Sleep Button)
+2024-07-13T13:52:20.537877-06:00 joel-VirtualBox systemd-logind[829]: Watching system buttons on /dev/input/event2 (AT Translated Set 2 keyboard)
+2024-07-13T13:52:20.537889-06:00 joel-VirtualBox polkitd[803]: Loading rules from directory /etc/polkit-1/rules.d
+2024-07-13T13:52:20.537890-06:00 joel-VirtualBox polkitd[803]: Loading rules from directory /usr/share/polkit-1/rules.d
+2024-07-13T13:52:20.537898-06:00 joel-VirtualBox polkitd[803]: Finished loading, compiling and executing 16 rules
+2024-07-13T13:52:20.537902-06:00 joel-VirtualBox polkitd[803]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+2024-07-13T13:52:21.334886-06:00 joel-VirtualBox gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session opened for user gdm(uid=120) by (uid=0)
+2024-07-13T13:52:21.341363-06:00 joel-VirtualBox systemd-logind[829]: New session c1 of user gdm.
+2024-07-13T13:52:21.379048-06:00 joel-VirtualBox (systemd): pam_unix(systemd-user:session): session opened for user gdm(uid=120) by gdm(uid=0)
+2024-07-13T13:52:22.723698-06:00 joel-VirtualBox polkitd[803]: Registered Authentication Agent for unix-session:c1 (system bus name :1.41 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+2024-07-13T13:54:50.198268-06:00 joel-VirtualBox systemd-logind[986]: New seat seat0.
+2024-07-13T13:54:50.198270-06:00 joel-VirtualBox systemd-logind[986]: Watching system buttons on /dev/input/event0 (Power Button)
+2024-07-13T13:54:50.198273-06:00 joel-VirtualBox systemd-logind[986]: Watching system buttons on /dev/input/event1 (Sleep Button)
+2024-07-13T13:54:50.198274-06:00 joel-VirtualBox systemd-logind[986]: Watching system buttons on /dev/input/event2 (AT Translated Set 2 keyboard)
+2024-07-13T13:54:50.211831-06:00 joel-VirtualBox polkitd[971]: Loading rules from directory /etc/polkit-1/rules.d
+2024-07-13T13:54:50.214141-06:00 joel-VirtualBox polkitd[971]: Loading rules from directory /usr/share/polkit-1/rules.d
+2024-07-13T13:54:50.242431-06:00 joel-VirtualBox polkitd[971]: Finished loading, compiling and executing 16 rules
+2024-07-13T13:54:50.243553-06:00 joel-VirtualBox polkitd[971]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+2024-07-13T13:54:51.211557-06:00 joel-VirtualBox gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session opened for user gdm(uid=120) by (uid=0)
+2024-07-13T13:54:51.220909-06:00 joel-VirtualBox systemd-logind[986]: New session c1 of user gdm.
+2024-07-13T13:54:51.257989-06:00 joel-VirtualBox (systemd): pam_unix(systemd-user:session): session opened for user gdm(uid=120) by gdm(uid=0)
+2024-07-13T13:54:52.590015-06:00 joel-VirtualBox polkitd[971]: Registered Authentication Agent for unix-session:c1 (system bus name :1.41 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+2024-07-13T13:54:57.820323-06:00 joel-VirtualBox gdm-password]: gkr-pam: unable to locate daemon control file
+2024-07-13T13:54:57.820551-06:00 joel-VirtualBox gdm-password]: gkr-pam: stashed password to try later in open session
+2024-07-13T13:54:57.827518-06:00 joel-VirtualBox gdm-password]: pam_unix(gdm-password:session): session opened for user joel(uid=1000) by joel(uid=0)
+2024-07-13T13:54:57.843777-06:00 joel-VirtualBox systemd-logind[986]: New session 2 of user joel.
+2024-07-13T13:54:57.854603-06:00 joel-VirtualBox (systemd): pam_unix(systemd-user:session): session opened for user joel(uid=1000) by joel(uid=0)
+2024-07-13T13:54:57.997221-06:00 joel-VirtualBox gdm-password]: gkr-pam: unlocked login keyring
+2024-07-13T13:54:58.196101-06:00 joel-VirtualBox gnome-keyring-daemon[1845]: The PKCS#11 component was already initialized
+2024-07-13T13:54:58.196408-06:00 joel-VirtualBox gnome-keyring-daemon[2048]: discover_other_daemon: 1
+2024-07-13T13:54:58.200028-06:00 joel-VirtualBox gnome-keyring-daemon[2050]: discover_other_daemon: 1
+2024-07-13T13:54:58.200382-06:00 joel-VirtualBox gnome-keyring-daemon[1845]: The Secret Service was already initialized
+2024-07-13T13:54:58.200730-06:00 joel-VirtualBox gnome-keyring-daemon[2054]: discover_other_daemon: 1
+2024-07-13T13:54:59.208002-06:00 joel-VirtualBox polkitd[971]: Registered Authentication Agent for unix-session:2 (system bus name :1.78 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+2024-07-13T13:54:59.546161-06:00 joel-VirtualBox gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session closed for user gdm
+2024-07-13T13:54:59.553754-06:00 joel-VirtualBox systemd-logind[986]: Session c1 logged out. Waiting for processes to exit.
+2024-07-13T13:54:59.559870-06:00 joel-VirtualBox polkitd[971]: Unregistered Authentication Agent for unix-session:c1 (system bus name :1.41, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8) (disconnected from bus)
+2024-07-13T13:54:59.560857-06:00 joel-VirtualBox systemd-logind[986]: Removed session c1.
+2024-07-13T13:55:01.127995-06:00 joel-VirtualBox CRON[2783]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-13T13:55:01.131730-06:00 joel-VirtualBox CRON[2783]: pam_unix(cron:session): session closed for user root
+2024-07-13T13:56:01.975631-06:00 joel-VirtualBox pkexec: pam_unix(polkit-1:session): session opened for user root(uid=0) by joel(uid=1000)
+2024-07-13T13:56:01.976108-06:00 joel-VirtualBox pkexec[3466]: joel: Executing command [USER=root] [TTY=unknown] [CWD=/home/joel] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+2024-07-13T13:57:21.473110-06:00 joel-VirtualBox systemd-logind[836]: New seat seat0.
+2024-07-13T13:57:21.473111-06:00 joel-VirtualBox systemd-logind[836]: Watching system buttons on /dev/input/event0 (Power Button)
+2024-07-13T13:57:21.473113-06:00 joel-VirtualBox systemd-logind[836]: Watching system buttons on /dev/input/event1 (Sleep Button)
+2024-07-13T13:57:21.473116-06:00 joel-VirtualBox systemd-logind[836]: Watching system buttons on /dev/input/event2 (AT Translated Set 2 keyboard)
+2024-07-13T13:57:21.473226-06:00 joel-VirtualBox polkitd[802]: Loading rules from directory /etc/polkit-1/rules.d
+2024-07-13T13:57:21.473227-06:00 joel-VirtualBox polkitd[802]: Loading rules from directory /usr/share/polkit-1/rules.d
+2024-07-13T13:57:21.477715-06:00 joel-VirtualBox polkitd[802]: Finished loading, compiling and executing 16 rules
+2024-07-13T13:57:21.479054-06:00 joel-VirtualBox polkitd[802]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+2024-07-13T13:57:22.244644-06:00 joel-VirtualBox gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session opened for user gdm(uid=120) by (uid=0)
+2024-07-13T13:57:22.267305-06:00 joel-VirtualBox systemd-logind[836]: New session c1 of user gdm.
+2024-07-13T13:57:22.283018-06:00 joel-VirtualBox (systemd): pam_unix(systemd-user:session): session opened for user gdm(uid=120) by gdm(uid=0)
+2024-07-13T13:57:23.638720-06:00 joel-VirtualBox polkitd[802]: Registered Authentication Agent for unix-session:c1 (system bus name :1.42 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+2024-07-13T13:57:35.939698-06:00 joel-VirtualBox gdm-password]: gkr-pam: unable to locate daemon control file
+2024-07-13T13:57:35.939848-06:00 joel-VirtualBox gdm-password]: gkr-pam: stashed password to try later in open session
+2024-07-13T13:57:35.945632-06:00 joel-VirtualBox gdm-password]: pam_unix(gdm-password:session): session opened for user joel(uid=1000) by joel(uid=0)
+2024-07-13T13:57:35.960012-06:00 joel-VirtualBox systemd-logind[836]: New session 2 of user joel.
+2024-07-13T13:57:35.971080-06:00 joel-VirtualBox (systemd): pam_unix(systemd-user:session): session opened for user joel(uid=1000) by joel(uid=0)
+2024-07-13T13:57:36.113294-06:00 joel-VirtualBox gdm-password]: gkr-pam: unlocked login keyring
+2024-07-13T13:57:36.344146-06:00 joel-VirtualBox gnome-keyring-daemon[1857]: The PKCS#11 component was already initialized
+2024-07-13T13:57:36.344224-06:00 joel-VirtualBox gnome-keyring-daemon[1857]: The Secret Service was already initialized
+2024-07-13T13:57:36.344401-06:00 joel-VirtualBox gnome-keyring-daemon[2059]: discover_other_daemon: 1
+2024-07-13T13:57:36.344489-06:00 joel-VirtualBox gnome-keyring-daemon[2062]: discover_other_daemon: 1
+2024-07-13T13:57:36.344806-06:00 joel-VirtualBox gnome-keyring-daemon[2060]: discover_other_daemon: 1
+2024-07-13T13:57:37.269220-06:00 joel-VirtualBox polkitd[802]: Registered Authentication Agent for unix-session:2 (system bus name :1.79 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+2024-07-13T13:57:37.661170-06:00 joel-VirtualBox gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session closed for user gdm
+2024-07-13T13:57:37.670183-06:00 joel-VirtualBox systemd-logind[836]: Session c1 logged out. Waiting for processes to exit.
+2024-07-13T13:57:37.678391-06:00 joel-VirtualBox polkitd[802]: Unregistered Authentication Agent for unix-session:c1 (system bus name :1.42, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8) (disconnected from bus)
+2024-07-13T13:57:37.684153-06:00 joel-VirtualBox systemd-logind[836]: Removed session c1.
+2024-07-13T13:57:48.054563-06:00 joel-VirtualBox (sd-pam): pam_unix(systemd-user:session): session closed for user gdm
+2024-07-13T13:58:10.879177-06:00 joel-VirtualBox login[3076]: PAM unable to dlopen(pam_lastlog.so): /usr/lib/security/pam_lastlog.so: cannot open shared object file: No such file or directory
+2024-07-13T13:58:10.879338-06:00 joel-VirtualBox login[3076]: PAM adding faulty module: pam_lastlog.so
+2024-07-13T13:58:13.951204-06:00 joel-VirtualBox login[3076]: pam_unix(login:session): session opened for user joel(uid=1000) by joel(uid=0)
+2024-07-13T13:58:13.957348-06:00 joel-VirtualBox systemd-logind[836]: New session 4 of user joel.
+2024-07-13T13:58:41.803188-06:00 joel-VirtualBox pkexec: pam_unix(polkit-1:session): session opened for user root(uid=0) by joel(uid=1000)
+2024-07-13T13:58:41.803818-06:00 joel-VirtualBox pkexec[3743]: joel: Executing command [USER=root] [TTY=unknown] [CWD=/home/joel] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+2024-07-13T13:58:42.070906-06:00 joel-VirtualBox systemd-logind[836]: The system will reboot now!
+2024-07-13T13:58:42.089086-06:00 joel-VirtualBox systemd-logind[836]: System is rebooting.
+2024-07-13T13:58:42.105981-06:00 joel-VirtualBox gdm-password]: pam_unix(gdm-password:session): session closed for user joel
+2024-07-13T13:58:52.935114-06:00 joel-VirtualBox systemd-logind[991]: New seat seat0.
+2024-07-13T13:58:52.935115-06:00 joel-VirtualBox systemd-logind[991]: Watching system buttons on /dev/input/event0 (Power Button)
+2024-07-13T13:58:52.935116-06:00 joel-VirtualBox systemd-logind[991]: Watching system buttons on /dev/input/event1 (Sleep Button)
+2024-07-13T13:58:52.935124-06:00 joel-VirtualBox systemd-logind[991]: Watching system buttons on /dev/input/event2 (AT Translated Set 2 keyboard)
+2024-07-13T13:58:52.935142-06:00 joel-VirtualBox polkitd[967]: Loading rules from directory /etc/polkit-1/rules.d
+2024-07-13T13:58:52.935143-06:00 joel-VirtualBox polkitd[967]: Loading rules from directory /usr/share/polkit-1/rules.d
+2024-07-13T13:58:52.932878-06:00 joel-VirtualBox polkitd[967]: Finished loading, compiling and executing 16 rules
+2024-07-13T13:58:52.935225-06:00 joel-VirtualBox polkitd[967]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+2024-07-13T13:58:53.687924-06:00 joel-VirtualBox gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session opened for user gdm(uid=120) by (uid=0)
+2024-07-13T13:58:53.725309-06:00 joel-VirtualBox systemd-logind[991]: New session c1 of user gdm.
+2024-07-13T13:58:53.756035-06:00 joel-VirtualBox (systemd): pam_unix(systemd-user:session): session opened for user gdm(uid=120) by gdm(uid=0)
+2024-07-13T13:58:54.767283-06:00 joel-VirtualBox polkitd[967]: Registered Authentication Agent for unix-session:c1 (system bus name :1.42 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+2024-07-13T13:58:59.339881-06:00 joel-VirtualBox gdm-password]: gkr-pam: unable to locate daemon control file
+2024-07-13T13:58:59.339981-06:00 joel-VirtualBox gdm-password]: gkr-pam: stashed password to try later in open session
+2024-07-13T13:58:59.350542-06:00 joel-VirtualBox gdm-password]: pam_unix(gdm-password:session): session opened for user joel(uid=1000) by joel(uid=0)
+2024-07-13T13:58:59.366837-06:00 joel-VirtualBox systemd-logind[991]: New session 2 of user joel.
+2024-07-13T13:58:59.376470-06:00 joel-VirtualBox (systemd): pam_unix(systemd-user:session): session opened for user joel(uid=1000) by joel(uid=0)
+2024-07-13T13:58:59.510607-06:00 joel-VirtualBox gdm-password]: gkr-pam: unlocked login keyring
+2024-07-13T13:58:59.689617-06:00 joel-VirtualBox gnome-keyring-daemon[1847]: The PKCS#11 component was already initialized
+2024-07-13T13:58:59.689985-06:00 joel-VirtualBox gnome-keyring-daemon[2050]: discover_other_daemon: 1
+2024-07-13T13:58:59.691275-06:00 joel-VirtualBox gnome-keyring-daemon[1847]: The Secret Service was already initialized
+2024-07-13T13:58:59.691428-06:00 joel-VirtualBox gnome-keyring-daemon[2053]: discover_other_daemon: 1
+2024-07-13T13:58:59.699113-06:00 joel-VirtualBox gnome-keyring-daemon[2057]: discover_other_daemon: 1
+2024-07-13T13:59:00.387053-06:00 joel-VirtualBox polkitd[967]: Registered Authentication Agent for unix-session:2 (system bus name :1.79 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+2024-07-13T13:59:00.712973-06:00 joel-VirtualBox gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session closed for user gdm
+2024-07-13T13:59:00.717927-06:00 joel-VirtualBox systemd-logind[991]: Session c1 logged out. Waiting for processes to exit.
+2024-07-13T13:59:00.726473-06:00 joel-VirtualBox polkitd[967]: Unregistered Authentication Agent for unix-session:c1 (system bus name :1.42, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8) (disconnected from bus)
+2024-07-13T13:59:00.732817-06:00 joel-VirtualBox systemd-logind[991]: Removed session c1.
+2024-07-13T13:59:11.144211-06:00 joel-VirtualBox (sd-pam): pam_unix(systemd-user:session): session closed for user gdm
+2024-07-13T13:59:14.793408-06:00 joel-VirtualBox sudo:     joel : TTY=pts/0 ; PWD=/home/joel ; USER=root ; COMMAND=/usr/sbin/slapcat
+2024-07-13T13:59:14.794169-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session opened for user root(uid=0) by joel(uid=1000)
+2024-07-13T13:59:14.803000-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session closed for user root
+2024-07-13T14:00:01.735176-06:00 joel-VirtualBox pkexec: pam_unix(polkit-1:session): session opened for user root(uid=0) by joel(uid=1000)
+2024-07-13T14:00:01.735775-06:00 joel-VirtualBox pkexec[2965]: joel: Executing command [USER=root] [TTY=unknown] [CWD=/home/joel] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+2024-07-13T14:05:01.729226-06:00 joel-VirtualBox CRON[3019]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-13T14:05:01.731914-06:00 joel-VirtualBox CRON[3019]: pam_unix(cron:session): session closed for user root
+2024-07-13T14:05:56.313695-06:00 joel-VirtualBox gdm-password]: gkr-pam: unlocked login keyring
+2024-07-13T14:06:23.355139-06:00 joel-VirtualBox sudo:     joel : TTY=pts/0 ; PWD=/home/joel/Documents ; USER=root ; COMMAND=/usr/sbin/slapcat
+2024-07-13T14:06:23.355794-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session opened for user root(uid=0) by joel(uid=1000)
+2024-07-13T14:06:23.364295-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session closed for user root
+2024-07-13T14:09:01.774267-06:00 joel-VirtualBox CRON[3319]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-13T14:09:01.775770-06:00 joel-VirtualBox CRON[3319]: pam_unix(cron:session): session closed for user root
+2024-07-13T14:13:19.696359-06:00 joel-VirtualBox sudo:     joel : TTY=pts/0 ; PWD=/home/joel/Documents ; USER=root ; COMMAND=/usr/bin/apt install pamtester
+2024-07-13T14:13:19.696926-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session opened for user root(uid=0) by joel(uid=1000)
+2024-07-13T14:13:22.726128-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session closed for user root
+2024-07-13T14:13:25.682809-06:00 joel-VirtualBox pamtester: PAM unable to dlopen(pam_lastlog.so): /usr/lib/security/pam_lastlog.so: cannot open shared object file: No such file or directory
+2024-07-13T14:13:25.682908-06:00 joel-VirtualBox pamtester: PAM adding faulty module: pam_lastlog.so
+2024-07-13T14:13:28.413497-06:00 joel-VirtualBox unix_chkpwd[3469]: password check failed for user (joel)
+2024-07-13T14:13:28.413991-06:00 joel-VirtualBox pamtester: pam_unix(login:auth): authentication failure; logname=joel uid=1000 euid=1000 tty= ruser= rhost=  user=joel
+2024-07-13T14:13:28.431636-06:00 joel-VirtualBox unix_chkpwd[3471]: password check failed for user (joel)
+2024-07-13T14:13:31.414476-06:00 joel-VirtualBox pamtester: PAM 1 more authentication failure; logname=joel uid=1000 euid=1000 tty= ruser= rhost=  user=joel
+2024-07-13T14:13:38.163786-06:00 joel-VirtualBox pamtester: PAM unable to dlopen(pam_lastlog.so): /usr/lib/security/pam_lastlog.so: cannot open shared object file: No such file or directory
+2024-07-13T14:13:38.163931-06:00 joel-VirtualBox pamtester: PAM adding faulty module: pam_lastlog.so
+2024-07-13T14:15:00.656613-06:00 joel-VirtualBox pkexec: pam_unix(polkit-1:session): session opened for user root(uid=0) by joel(uid=1000)
+2024-07-13T14:15:00.657946-06:00 joel-VirtualBox pkexec[3494]: joel: Executing command [USER=root] [TTY=unknown] [CWD=/home/joel] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+2024-07-13T14:15:01.844302-06:00 joel-VirtualBox CRON[3503]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-13T14:15:01.846476-06:00 joel-VirtualBox CRON[3503]: pam_unix(cron:session): session closed for user root
+2024-07-13T14:17:01.850562-06:00 joel-VirtualBox CRON[3532]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-13T14:17:01.853031-06:00 joel-VirtualBox CRON[3532]: pam_unix(cron:session): session closed for user root
+2024-07-13T14:17:06.663875-06:00 joel-VirtualBox pamtester: PAM unable to dlopen(pam_lastlog.so): /usr/lib/security/pam_lastlog.so: cannot open shared object file: No such file or directory
+2024-07-13T14:17:06.664140-06:00 joel-VirtualBox pamtester: PAM adding faulty module: pam_lastlog.so
+2024-07-13T14:19:14.372481-06:00 joel-VirtualBox sudo:     joel : TTY=pts/1 ; PWD=/home/joel ; USER=root ; COMMAND=/usr/bin/apt install plocate
+2024-07-13T14:19:14.372888-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session opened for user root(uid=0) by joel(uid=1000)
+2024-07-13T14:19:16.531712-06:00 joel-VirtualBox groupadd[3626]: group added to /etc/group: name=plocate, GID=126
+2024-07-13T14:19:16.532767-06:00 joel-VirtualBox groupadd[3626]: group added to /etc/gshadow: name=plocate
+2024-07-13T14:19:16.535376-06:00 joel-VirtualBox groupadd[3626]: new group: name=plocate, GID=126
+2024-07-13T14:19:22.069008-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session closed for user root
+2024-07-13T14:20:40.731369-06:00 joel-VirtualBox sudo:     joel : TTY=pts/0 ; PWD=/etc/pam.d ; USER=root ; COMMAND=/usr/bin/nano common-auth
+2024-07-13T14:20:40.737114-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session opened for user root(uid=0) by joel(uid=1000)
+2024-07-13T14:21:00.681592-06:00 joel-VirtualBox pkexec: pam_unix(polkit-1:session): session opened for user root(uid=0) by joel(uid=1000)
+2024-07-13T14:21:00.681933-06:00 joel-VirtualBox pkexec[3731]: joel: Executing command [USER=root] [TTY=unknown] [CWD=/home/joel] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+2024-07-13T14:22:18.429813-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session closed for user root
+2024-07-13T14:22:22.424312-06:00 joel-VirtualBox sudo:     joel : TTY=pts/0 ; PWD=/etc/pam.d ; USER=root ; COMMAND=/usr/bin/nano common-session
+2024-07-13T14:22:22.424467-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session opened for user root(uid=0) by joel(uid=1000)
+2024-07-13T14:23:48.780545-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session closed for user root
+2024-07-13T14:24:11.637525-06:00 joel-VirtualBox pamtester: PAM unable to dlopen(pam_lastlog.so): /usr/lib/security/pam_lastlog.so: cannot open shared object file: No such file or directory
+2024-07-13T14:24:11.637687-06:00 joel-VirtualBox pamtester: PAM adding faulty module: pam_lastlog.so
+2024-07-13T14:25:01.962729-06:00 joel-VirtualBox CRON[3757]: PAM unable to dlopen(pam_lastlog.so): /usr/lib/security/pam_lastlog.so: cannot open shared object file: No such file or directory
+2024-07-13T14:25:01.962843-06:00 joel-VirtualBox CRON[3757]: PAM adding faulty module: pam_lastlog.so
+2024-07-13T14:25:01.964798-06:00 joel-VirtualBox CRON[3757]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-13T14:25:01.967922-06:00 joel-VirtualBox CRON[3757]: pam_unix(cron:session): session closed for user root
+2024-07-13T14:27:08.755635-06:00 joel-VirtualBox sudo: PAM unable to dlopen(pam_lastlog.so): /usr/lib/security/pam_lastlog.so: cannot open shared object file: No such file or directory
+2024-07-13T14:27:08.755752-06:00 joel-VirtualBox sudo: PAM adding faulty module: pam_lastlog.so
+2024-07-13T14:27:08.756687-06:00 joel-VirtualBox sudo:     joel : TTY=pts/0 ; PWD=/etc/pam.d ; USER=root ; COMMAND=/usr/bin/nano common-auth
+2024-07-13T14:27:08.757486-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session opened for user root(uid=0) by joel(uid=1000)
+2024-07-13T14:28:05.349279-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session closed for user root
+2024-07-13T14:28:08.850448-06:00 joel-VirtualBox sudo: PAM unable to dlopen(pam_lastlog.so): /usr/lib/security/pam_lastlog.so: cannot open shared object file: No such file or directory
+2024-07-13T14:28:08.850728-06:00 joel-VirtualBox sudo: PAM adding faulty module: pam_lastlog.so
+2024-07-13T14:28:08.851499-06:00 joel-VirtualBox sudo:     joel : TTY=pts/0 ; PWD=/etc/pam.d ; USER=root ; COMMAND=/usr/bin/nano common-session
+2024-07-13T14:28:08.852700-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session opened for user root(uid=0) by joel(uid=1000)
+2024-07-13T14:28:26.131359-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session closed for user root
+2024-07-13T14:28:48.077421-06:00 joel-VirtualBox pamtester: PAM unable to dlopen(pam_lastlog.so): /usr/lib/security/pam_lastlog.so: cannot open shared object file: No such file or directory
+2024-07-13T14:28:48.077578-06:00 joel-VirtualBox pamtester: PAM adding faulty module: pam_lastlog.so
+2024-07-13T14:30:01.040319-06:00 joel-VirtualBox CRON[3796]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-13T14:30:01.042323-06:00 joel-VirtualBox CRON[3796]: pam_unix(cron:session): session closed for user root
+2024-07-13T14:33:07.498836-06:00 joel-VirtualBox sudo:     joel : TTY=pts/1 ; PWD=/home/joel ; USER=root ; COMMAND=/usr/bin/mv /snap/core22/1380/usr/lib/x86_64-linux-gnu/security/pam_lastlog.so /usr/lib/security/
+2024-07-13T14:33:07.500871-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session opened for user root(uid=0) by joel(uid=1000)
+2024-07-13T14:33:07.501703-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session closed for user root
+2024-07-13T14:33:10.968593-06:00 joel-VirtualBox sudo:     joel : TTY=pts/1 ; PWD=/home/joel ; USER=root ; COMMAND=/usr/bin/mv /snap/core22/1380/usr/lib/x86_64-linux-gnu/security/pam_lastlog.so /usr/lib/security
+2024-07-13T14:33:10.969163-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session opened for user root(uid=0) by joel(uid=1000)
+2024-07-13T14:33:10.971369-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session closed for user root
+2024-07-13T14:33:38.872081-06:00 joel-VirtualBox sudo:     joel : TTY=pts/1 ; PWD=/home/joel ; USER=root ; COMMAND=/usr/bin/chmod 777 /snap/core22/1380/usr/lib/x86_64-linux-gnu/security/pam_lastlog.so
+2024-07-13T14:33:38.872661-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session opened for user root(uid=0) by joel(uid=1000)
+2024-07-13T14:33:38.874384-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session closed for user root
+2024-07-13T14:34:32.304545-06:00 joel-VirtualBox sudo:     joel : TTY=pts/1 ; PWD=/home/joel ; USER=root ; COMMAND=/usr/bin/chmod 644 /snap/core22/1380/usr/lib/x86_64-linux-gnu/security/pam_lastlog.so
+2024-07-13T14:34:32.305271-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session opened for user root(uid=0) by joel(uid=1000)
+2024-07-13T14:34:32.306574-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session closed for user root
+2024-07-13T14:34:54.932367-06:00 joel-VirtualBox sudo:     joel : TTY=pts/1 ; PWD=/home/joel ; USER=root ; COMMAND=/usr/bin/cp /snap/core22/1380/usr/lib/x86_64-linux-gnu/security/pam_lastlog.so /usr/lib/security
+2024-07-13T14:34:54.933254-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session opened for user root(uid=0) by joel(uid=1000)
+2024-07-13T14:34:54.939097-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session closed for user root
+2024-07-13T14:35:01.099413-06:00 joel-VirtualBox CRON[3826]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-13T14:35:01.102167-06:00 joel-VirtualBox CRON[3826]: pam_unix(cron:session): session closed for user root
+2024-07-13T14:38:56.369664-06:00 joel-VirtualBox sudo:     joel : TTY=pts/1 ; PWD=/usr/lib ; USER=root ; COMMAND=/usr/bin/ls -ld security
+2024-07-13T14:38:56.371056-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session opened for user root(uid=0) by joel(uid=1000)
+2024-07-13T14:38:56.371531-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session closed for user root
+2024-07-13T14:39:01.117807-06:00 joel-VirtualBox CRON[3939]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-13T14:39:01.119357-06:00 joel-VirtualBox CRON[3939]: pam_unix(cron:session): session closed for user root
+2024-07-13T14:39:12.963925-06:00 joel-VirtualBox sudo:     joel : TTY=pts/1 ; PWD=/usr/lib ; USER=root ; COMMAND=/usr/bin/chmod 755 security
+2024-07-13T14:39:12.965527-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session opened for user root(uid=0) by joel(uid=1000)
+2024-07-13T14:39:12.967997-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session closed for user root
+2024-07-13T14:39:15.804121-06:00 joel-VirtualBox sudo:     joel : TTY=pts/1 ; PWD=/usr/lib ; USER=root ; COMMAND=/usr/bin/ls -ld security
+2024-07-13T14:39:15.805505-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session opened for user root(uid=0) by joel(uid=1000)
+2024-07-13T14:39:15.808125-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session closed for user root
+2024-07-13T14:39:25.766460-06:00 joel-VirtualBox sudo:     joel : TTY=pts/1 ; PWD=/usr/lib ; USER=root ; COMMAND=/usr/bin/cp /snap/core22/1380/usr/lib/x86_64-linux-gnu/security/pam_lastlog.so /usr/lib/security
+2024-07-13T14:39:25.766900-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session opened for user root(uid=0) by joel(uid=1000)
+2024-07-13T14:39:25.769077-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session closed for user root
+2024-07-13T14:39:39.610132-06:00 joel-VirtualBox sudo:     joel : TTY=pts/1 ; PWD=/usr/lib ; USER=root ; COMMAND=/usr/bin/chmod 777 security
+2024-07-13T14:39:39.610740-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session opened for user root(uid=0) by joel(uid=1000)
+2024-07-13T14:39:39.612554-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session closed for user root
+2024-07-13T14:39:46.170663-06:00 joel-VirtualBox sudo:     joel : TTY=pts/1 ; PWD=/usr/lib ; USER=root ; COMMAND=/usr/bin/ls -ld security
+2024-07-13T14:39:46.171116-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session opened for user root(uid=0) by joel(uid=1000)
+2024-07-13T14:39:46.173967-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session closed for user root
+2024-07-13T14:44:03.131827-06:00 joel-VirtualBox dbus-daemon[955]: [system] Failed to activate service 'org.bluez': timed out (service_start_timeout=25000ms)
+2024-07-13T14:45:01.194953-06:00 joel-VirtualBox CRON[4018]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-13T14:45:01.197694-06:00 joel-VirtualBox CRON[4018]: pam_unix(cron:session): session closed for user root
+2024-07-13T14:55:01.286073-06:00 joel-VirtualBox CRON[4038]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-13T14:55:01.288535-06:00 joel-VirtualBox CRON[4038]: pam_unix(cron:session): session closed for user root
+2024-07-13T15:05:01.584735-06:00 joel-VirtualBox CRON[4121]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-13T15:05:01.587098-06:00 joel-VirtualBox CRON[4121]: pam_unix(cron:session): session closed for user root
+2024-07-13T15:09:01.683643-06:00 joel-VirtualBox CRON[4187]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-13T15:09:01.685190-06:00 joel-VirtualBox CRON[4187]: pam_unix(cron:session): session closed for user root
+2024-07-13T15:15:01.768894-06:00 joel-VirtualBox CRON[4194]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-13T15:15:01.771500-06:00 joel-VirtualBox CRON[4194]: pam_unix(cron:session): session closed for user root
+2024-07-13T15:17:01.781039-06:00 joel-VirtualBox CRON[4197]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-13T15:17:01.783292-06:00 joel-VirtualBox CRON[4197]: pam_unix(cron:session): session closed for user root
+2024-07-13T15:25:01.873370-06:00 joel-VirtualBox CRON[4206]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-13T15:25:01.876286-06:00 joel-VirtualBox CRON[4206]: pam_unix(cron:session): session closed for user root
+2024-07-13T15:30:01.991890-06:00 joel-VirtualBox CRON[4213]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-13T15:30:01.994472-06:00 joel-VirtualBox CRON[4213]: pam_unix(cron:session): session closed for user root
+2024-07-13T15:32:38.109228-06:00 joel-VirtualBox gdm-password]: gkr-pam: unlocked login keyring
+2024-07-13T15:35:01.029661-06:00 joel-VirtualBox CRON[4307]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-13T15:35:01.032150-06:00 joel-VirtualBox CRON[4307]: pam_unix(cron:session): session closed for user root
+2024-07-13T15:35:08.677815-06:00 joel-VirtualBox sudo:     joel : TTY=pts/1 ; PWD=/usr ; USER=root ; COMMAND=/usr/bin/cp /snap/core22/1380/usr/lib/x86_64-linux-gnu/security/pam_lastlog.so /usr/lib/security
+2024-07-13T15:35:08.679186-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session opened for user root(uid=0) by joel(uid=1000)
+2024-07-13T15:35:08.679812-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session closed for user root
+2024-07-13T15:35:41.363685-06:00 joel-VirtualBox pamtester: PAM unable to dlopen(pam_lastlog.so): /usr/lib/security/pam_lastlog.so: cannot open shared object file: Not a directory
+2024-07-13T15:35:41.363934-06:00 joel-VirtualBox pamtester: PAM adding faulty module: pam_lastlog.so
+2024-07-13T15:37:06.201476-06:00 joel-VirtualBox sudo:     joel : TTY=pts/1 ; PWD=/usr ; USER=root ; COMMAND=/usr/bin/find /lib -name pam_lastlog.so
+2024-07-13T15:37:06.201752-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session opened for user root(uid=0) by joel(uid=1000)
+2024-07-13T15:37:06.203541-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session closed for user root
+2024-07-13T15:37:20.600723-06:00 joel-VirtualBox sudo:     joel : TTY=pts/1 ; PWD=/usr ; USER=root ; COMMAND=/usr/bin/find pam_lastlog.so
+2024-07-13T15:37:20.601820-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session opened for user root(uid=0) by joel(uid=1000)
+2024-07-13T15:37:20.604021-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session closed for user root
+2024-07-13T15:38:07.722553-06:00 joel-VirtualBox sudo:     joel : TTY=pts/1 ; PWD=/usr ; USER=root ; COMMAND=/usr/bin/apt update
+2024-07-13T15:38:07.723453-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session opened for user root(uid=0) by joel(uid=1000)
+2024-07-13T15:38:11.732057-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session closed for user root
+2024-07-13T15:38:18.824894-06:00 joel-VirtualBox sudo:     joel : TTY=pts/1 ; PWD=/usr ; USER=root ; COMMAND=/usr/bin/apt install --reinstall libpam-modules
+2024-07-13T15:38:18.825438-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session opened for user root(uid=0) by joel(uid=1000)
+2024-07-13T15:38:21.001308-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session closed for user root
+2024-07-13T15:38:23.814819-06:00 joel-VirtualBox sudo:     joel : TTY=pts/1 ; PWD=/usr ; USER=root ; COMMAND=/usr/bin/find pam_lastlog.so
+2024-07-13T15:38:23.815075-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session opened for user root(uid=0) by joel(uid=1000)
+2024-07-13T15:38:23.817088-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session closed for user root
+2024-07-13T15:38:49.061922-06:00 joel-VirtualBox sudo:     joel : TTY=pts/1 ; PWD=/usr ; USER=root ; COMMAND=/usr/bin/find pam_lastlog.so
+2024-07-13T15:38:49.063167-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session opened for user root(uid=0) by joel(uid=1000)
+2024-07-13T15:38:49.065545-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session closed for user root
+2024-07-13T15:39:00.615759-06:00 joel-VirtualBox pkexec: pam_unix(polkit-1:session): session opened for user root(uid=0) by joel(uid=1000)
+2024-07-13T15:39:00.616609-06:00 joel-VirtualBox pkexec[4846]: joel: Executing command [USER=root] [TTY=unknown] [CWD=/home/joel] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+2024-07-13T15:39:01.051188-06:00 joel-VirtualBox CRON[4856]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-13T15:39:01.053236-06:00 joel-VirtualBox CRON[4856]: pam_unix(cron:session): session closed for user root
+2024-07-13T15:41:14.456661-06:00 joel-VirtualBox sudo:     joel : TTY=pts/1 ; PWD=/var/log ; USER=root ; COMMAND=/usr/bin/nano common_auth
+2024-07-13T15:41:14.458924-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session opened for user root(uid=0) by joel(uid=1000)
+2024-07-13T15:41:17.879061-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session closed for user root
+2024-07-13T15:42:16.864350-06:00 joel-VirtualBox sudo:     joel : TTY=pts/1 ; PWD=/etc/pam.d ; USER=root ; COMMAND=/usr/bin/nano common_auth
+2024-07-13T15:42:16.864937-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session opened for user root(uid=0) by joel(uid=1000)
+2024-07-13T15:42:20.912864-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session closed for user root
+2024-07-13T15:44:30.747331-06:00 joel-VirtualBox sudo:     joel : TTY=pts/1 ; PWD=/etc/pam.d ; USER=root ; COMMAND=/usr/bin/apt install libpam-ldap ldap-utils
+2024-07-13T15:44:30.748363-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session opened for user root(uid=0) by joel(uid=1000)
+2024-07-13T15:44:35.960085-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session closed for user root
+2024-07-13T15:44:43.916232-06:00 joel-VirtualBox sudo:     joel : TTY=pts/1 ; PWD=/etc/pam.d ; USER=root ; COMMAND=/usr/bin/nano common-auth
+2024-07-13T15:44:43.916964-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session opened for user root(uid=0) by joel(uid=1000)
+2024-07-13T15:45:00.570819-06:00 joel-VirtualBox pkexec: pam_unix(polkit-1:session): session opened for user root(uid=0) by joel(uid=1000)
+2024-07-13T15:45:00.571766-06:00 joel-VirtualBox pkexec[5044]: joel: Executing command [USER=root] [TTY=unknown] [CWD=/home/joel] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+2024-07-13T15:45:01.114345-06:00 joel-VirtualBox CRON[5054]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-13T15:45:01.117199-06:00 joel-VirtualBox CRON[5054]: pam_unix(cron:session): session closed for user root
+2024-07-13T15:45:42.771464-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session closed for user root
+2024-07-13T15:45:57.934045-06:00 joel-VirtualBox sudo: PAM pam_parse: expecting return value; [...succes=1 default=ignore]
+2024-07-13T15:45:57.936194-06:00 joel-VirtualBox sudo: PAM pam_parse: expecting return value; [...succes=1 default=ignore]
+2024-07-13T15:45:57.938286-06:00 joel-VirtualBox sudo:     joel : TTY=pts/1 ; PWD=/etc/pam.d ; USER=root ; COMMAND=/usr/bin/nano common-account
+2024-07-13T15:45:57.939595-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session opened for user root(uid=0) by joel(uid=1000)
+2024-07-13T15:46:30.415093-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session closed for user root
+2024-07-13T15:46:38.412573-06:00 joel-VirtualBox sudo: PAM pam_parse: expecting return value; [...succes=1 default=ignore]
+2024-07-13T15:46:38.415420-06:00 joel-VirtualBox sudo: PAM pam_parse: expecting return value; [...succes=1 default=ignore]
+2024-07-13T15:46:38.420513-06:00 joel-VirtualBox sudo:     joel : TTY=pts/1 ; PWD=/etc/pam.d ; USER=root ; COMMAND=/usr/bin/nano common-password
+2024-07-13T15:46:38.421553-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session opened for user root(uid=0) by joel(uid=1000)
+2024-07-13T15:46:53.589431-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session closed for user root
+2024-07-13T15:47:00.757710-06:00 joel-VirtualBox sudo: PAM pam_parse: expecting return value; [...succes=1 default=ignore]
+2024-07-13T15:47:00.760374-06:00 joel-VirtualBox sudo: PAM pam_parse: expecting return value; [...succes=1 default=ignore]
+2024-07-13T15:47:00.764053-06:00 joel-VirtualBox sudo:     joel : TTY=pts/1 ; PWD=/etc/pam.d ; USER=root ; COMMAND=/usr/bin/nano common-session
+2024-07-13T15:47:00.765255-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session opened for user root(uid=0) by joel(uid=1000)
+2024-07-13T15:47:18.026411-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session closed for user root
+2024-07-13T15:47:30.523282-06:00 joel-VirtualBox sudo: PAM pam_parse: expecting return value; [...succes=1 default=ignore]
+2024-07-13T15:47:30.525875-06:00 joel-VirtualBox sudo: PAM pam_parse: expecting return value; [...succes=1 default=ignore]
+2024-07-13T15:47:30.529990-06:00 joel-VirtualBox sudo:     joel : TTY=pts/1 ; PWD=/etc/ldap ; USER=root ; COMMAND=/usr/bin/nano ldap.conf
+2024-07-13T15:47:30.531072-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session opened for user root(uid=0) by joel(uid=1000)
+2024-07-13T15:50:12.402007-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session closed for user root
+2024-07-13T15:50:25.811827-06:00 joel-VirtualBox sudo: PAM pam_parse: expecting return value; [...succes=1 default=ignore]
+2024-07-13T15:50:25.814155-06:00 joel-VirtualBox sudo: PAM pam_parse: expecting return value; [...succes=1 default=ignore]
+2024-07-13T15:50:25.818419-06:00 joel-VirtualBox sudo:     joel : TTY=pts/1 ; PWD=/etc/ldap ; USER=root ; COMMAND=/usr/bin/systemctl restart labpam-ldapd
+2024-07-13T15:50:25.819556-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session opened for user root(uid=0) by joel(uid=1000)
+2024-07-13T15:50:25.826085-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session closed for user root
+2024-07-13T15:50:31.304199-06:00 joel-VirtualBox sudo: PAM pam_parse: expecting return value; [...succes=1 default=ignore]
+2024-07-13T15:50:31.307194-06:00 joel-VirtualBox sudo: PAM pam_parse: expecting return value; [...succes=1 default=ignore]
+2024-07-13T15:50:31.311053-06:00 joel-VirtualBox sudo:     joel : TTY=pts/1 ; PWD=/etc/ldap ; USER=root ; COMMAND=/usr/bin/systemctl restart libpam-ldapd
+2024-07-13T15:50:31.311966-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session opened for user root(uid=0) by joel(uid=1000)
+2024-07-13T15:50:31.318470-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session closed for user root
+2024-07-13T15:51:21.738189-06:00 joel-VirtualBox sudo: PAM pam_parse: expecting return value; [...succes=1 default=ignore]
+2024-07-13T15:51:21.740813-06:00 joel-VirtualBox sudo: PAM pam_parse: expecting return value; [...succes=1 default=ignore]
+2024-07-13T15:51:21.745576-06:00 joel-VirtualBox sudo:     joel : TTY=pts/1 ; PWD=/etc/ldap ; USER=root ; COMMAND=/usr/bin/apt update
+2024-07-13T15:51:21.746652-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session opened for user root(uid=0) by joel(uid=1000)
+2024-07-13T15:51:22.792491-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session closed for user root
+2024-07-13T15:51:27.905872-06:00 joel-VirtualBox sudo: PAM pam_parse: expecting return value; [...succes=1 default=ignore]
+2024-07-13T15:51:27.908271-06:00 joel-VirtualBox sudo: PAM pam_parse: expecting return value; [...succes=1 default=ignore]
+2024-07-13T15:51:27.913324-06:00 joel-VirtualBox sudo:     joel : TTY=pts/1 ; PWD=/etc/ldap ; USER=root ; COMMAND=/usr/bin/apt install libpam-ldapd
+2024-07-13T15:51:27.914338-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session opened for user root(uid=0) by joel(uid=1000)
+2024-07-13T15:51:31.040369-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session closed for user root
+2024-07-13T15:53:16.150534-06:00 joel-VirtualBox sudo: PAM pam_parse: expecting return value; [...succes=1 default=ignore]
+2024-07-13T15:53:16.150780-06:00 joel-VirtualBox sudo: PAM pam_parse: expecting return value; [...succes=1 default=ignore]
+2024-07-13T15:53:16.151768-06:00 joel-VirtualBox sudo:     joel : TTY=pts/1 ; PWD=/etc/ldap ; USER=root ; COMMAND=/usr/sbin/slapcat
+2024-07-13T15:53:16.153014-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session opened for user root(uid=0) by joel(uid=1000)
+2024-07-13T15:53:16.161727-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session closed for user root
+2024-07-13T15:54:00.665492-06:00 joel-VirtualBox pkexec: PAM pam_parse: expecting return value; [...succes=1 default=ignore]
+2024-07-13T15:54:00.666075-06:00 joel-VirtualBox pkexec: PAM pam_parse: expecting return value; [...succes=1 default=ignore]
+2024-07-13T15:54:00.666484-06:00 joel-VirtualBox pkexec: pam_unix(polkit-1:session): session opened for user root(uid=0) by joel(uid=1000)
+2024-07-13T15:54:00.667145-06:00 joel-VirtualBox pkexec[6484]: joel: Executing command [USER=root] [TTY=unknown] [CWD=/home/joel] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+2024-07-13T15:54:42.417210-06:00 joel-VirtualBox pamtester: PAM pam_parse: expecting return value; [...succes=1 default=ignore]
+2024-07-13T15:54:42.417663-06:00 joel-VirtualBox pamtester: PAM unable to dlopen(pam_lastlog.so): /usr/lib/security/pam_lastlog.so: cannot open shared object file: Not a directory
+2024-07-13T15:54:42.417714-06:00 joel-VirtualBox pamtester: PAM adding faulty module: pam_lastlog.so
+2024-07-13T15:54:42.418515-06:00 joel-VirtualBox pamtester: PAM pam_parse: expecting return value; [...succes=1 default=ignore]
+2024-07-13T15:54:51.268297-06:00 joel-VirtualBox pamtester: PAM pam_parse: expecting return value; [...succes=1 default=ignore]
+2024-07-13T15:54:51.268512-06:00 joel-VirtualBox pamtester: PAM unable to dlopen(pam_lastlog.so): /usr/lib/security/pam_lastlog.so: cannot open shared object file: Not a directory
+2024-07-13T15:54:51.268549-06:00 joel-VirtualBox pamtester: PAM adding faulty module: pam_lastlog.so
+2024-07-13T15:54:51.269049-06:00 joel-VirtualBox pamtester: PAM pam_parse: expecting return value; [...succes=1 default=ignore]
+2024-07-13T15:55:01.202103-06:00 joel-VirtualBox CRON[6507]: PAM pam_parse: expecting return value; [...succes=1 default=ignore]
+2024-07-13T15:55:01.203020-06:00 joel-VirtualBox CRON[6507]: PAM pam_parse: expecting return value; [...succes=1 default=ignore]
+2024-07-13T15:55:05.374365-06:00 joel-VirtualBox pamtester: PAM pam_parse: expecting return value; [...succes=1 default=ignore]
+2024-07-13T15:55:05.375071-06:00 joel-VirtualBox pamtester: PAM unable to dlopen(pam_lastlog.so): /usr/lib/security/pam_lastlog.so: cannot open shared object file: Not a directory
+2024-07-13T15:55:05.375141-06:00 joel-VirtualBox pamtester: PAM adding faulty module: pam_lastlog.so
+2024-07-13T15:55:05.377451-06:00 joel-VirtualBox pamtester: PAM pam_parse: expecting return value; [...succes=1 default=ignore]
+2024-07-13T15:55:07.311067-06:00 joel-VirtualBox unix_chkpwd[6510]: password check failed for user (joel)
+2024-07-13T15:55:07.311461-06:00 joel-VirtualBox pamtester: pam_unix(login:auth): authentication failure; logname=joel uid=1000 euid=1000 tty= ruser= rhost=  user=joel
+2024-07-13T15:55:07.327273-06:00 joel-VirtualBox unix_chkpwd[6512]: password check failed for user (joel)
+2024-07-13T15:55:09.953364-06:00 joel-VirtualBox pamtester: PAM 1 more authentication failure; logname=joel uid=1000 euid=1000 tty= ruser= rhost=  user=joel
+2024-07-13T15:57:06.061766-06:00 joel-VirtualBox sudo: PAM pam_parse: expecting return value; [...succes=1 default=ignore]
+2024-07-13T15:57:06.067704-06:00 joel-VirtualBox sudo: PAM pam_parse: expecting return value; [...succes=1 default=ignore]
+2024-07-13T15:57:06.067767-06:00 joel-VirtualBox sudo:     joel : TTY=pts/1 ; PWD=/etc/pam.d ; USER=root ; COMMAND=/usr/bin/nano common-auth
+2024-07-13T15:57:06.067994-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session opened for user root(uid=0) by joel(uid=1000)
+2024-07-13T15:57:37.653997-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session closed for user root
+2024-07-13T15:57:46.076043-06:00 joel-VirtualBox sudo: PAM pam_parse: expecting return value; [...succes=1 default=ignore]
+2024-07-13T15:57:46.076754-06:00 joel-VirtualBox sudo: PAM pam_parse: expecting return value; [...succes=1 default=ignore]
+2024-07-13T15:57:46.078936-06:00 joel-VirtualBox sudo:     joel : TTY=pts/1 ; PWD=/etc/pam.d ; USER=root ; COMMAND=/usr/bin/systemctl restart apache2
+2024-07-13T15:57:46.080097-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session opened for user root(uid=0) by joel(uid=1000)
+2024-07-13T15:57:46.163882-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session closed for user root
+2024-07-13T15:57:50.052095-06:00 joel-VirtualBox sudo: PAM pam_parse: expecting return value; [...succes=1 default=ignore]
+2024-07-13T15:57:50.052808-06:00 joel-VirtualBox sudo: PAM pam_parse: expecting return value; [...succes=1 default=ignore]
+2024-07-13T15:57:50.054803-06:00 joel-VirtualBox sudo:     joel : TTY=pts/1 ; PWD=/etc/pam.d ; USER=root ; COMMAND=/usr/bin/systemctl restart nslcd
+2024-07-13T15:57:50.055975-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session opened for user root(uid=0) by joel(uid=1000)
+2024-07-13T15:57:50.134056-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session closed for user root
+2024-07-13T15:57:53.870179-06:00 joel-VirtualBox sudo: PAM pam_parse: expecting return value; [...succes=1 default=ignore]
+2024-07-13T15:57:53.872535-06:00 joel-VirtualBox sudo: PAM pam_parse: expecting return value; [...succes=1 default=ignore]
+2024-07-13T15:57:53.875152-06:00 joel-VirtualBox sudo:     joel : TTY=pts/1 ; PWD=/etc/pam.d ; USER=root ; COMMAND=/usr/bin/systemctl restart nscd
+2024-07-13T15:57:53.876461-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session opened for user root(uid=0) by joel(uid=1000)
+2024-07-13T15:57:53.907477-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session closed for user root
+2024-07-13T15:58:10.709143-06:00 joel-VirtualBox sudo: PAM pam_parse: expecting return value; [...succes=1 default=ignore]
+2024-07-13T15:58:10.710111-06:00 joel-VirtualBox sudo: PAM pam_parse: expecting return value; [...succes=1 default=ignore]
+2024-07-13T15:58:10.712225-06:00 joel-VirtualBox sudo:     joel : TTY=pts/1 ; PWD=/etc/pam.d ; USER=root ; COMMAND=/usr/sbin/slapcat
+2024-07-13T15:58:10.713183-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session opened for user root(uid=0) by joel(uid=1000)
+2024-07-13T15:58:10.723648-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session closed for user root
+2024-07-13T15:58:28.538302-06:00 joel-VirtualBox sudo: PAM pam_parse: expecting return value; [...succes=1 default=ignore]
+2024-07-13T15:58:28.539097-06:00 joel-VirtualBox sudo: PAM pam_parse: expecting return value; [...succes=1 default=ignore]
+2024-07-13T15:58:28.541010-06:00 joel-VirtualBox sudo:     joel : TTY=pts/1 ; PWD=/etc/pam.d ; USER=root ; COMMAND=/usr/bin/tail -f /var/log/auth.log
+2024-07-13T15:58:28.542184-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session opened for user root(uid=0) by joel(uid=1000)
+2024-07-13T15:58:59.970043-06:00 joel-VirtualBox pamtester: PAM pam_parse: expecting return value; [...succes=1 default=ignore]
+2024-07-13T15:58:59.970259-06:00 joel-VirtualBox pamtester: PAM unable to dlopen(pam_lastlog.so): /usr/lib/security/pam_lastlog.so: cannot open shared object file: Not a directory
+2024-07-13T15:58:59.970315-06:00 joel-VirtualBox pamtester: PAM adding faulty module: pam_lastlog.so
+2024-07-13T15:58:59.970424-06:00 joel-VirtualBox pamtester: PAM pam_parse: expecting return value; [...succes=1 default=ignore]
+2024-07-13T15:59:39.913041-06:00 joel-VirtualBox sudo: PAM pam_parse: expecting return value; [...succes=1 default=ignore]
+2024-07-13T15:59:39.913295-06:00 joel-VirtualBox sudo: PAM pam_parse: expecting return value; [...succes=1 default=ignore]
+2024-07-13T15:59:39.914704-06:00 joel-VirtualBox sudo:     joel : TTY=pts/1 ; PWD=/etc/pam.d ; USER=root ; COMMAND=/usr/sbin/ufw enable
+2024-07-13T15:59:39.915874-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session opened for user root(uid=0) by joel(uid=1000)
+2024-07-13T15:59:41.302455-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session closed for user root
+2024-07-13T15:59:59.803209-06:00 joel-VirtualBox sudo: PAM pam_parse: expecting return value; [...succes=1 default=ignore]
+2024-07-13T15:59:59.803871-06:00 joel-VirtualBox sudo: PAM pam_parse: expecting return value; [...succes=1 default=ignore]
+2024-07-13T15:59:59.806875-06:00 joel-VirtualBox sudo:     joel : TTY=pts/1 ; PWD=/etc/pam.d ; USER=root ; COMMAND=/usr/sbin/ufw status
+2024-07-13T15:59:59.807810-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session opened for user root(uid=0) by joel(uid=1000)
+2024-07-13T15:59:59.852509-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session closed for user root
+2024-07-13T16:01:39.955644-06:00 joel-VirtualBox sudo: PAM pam_parse: expecting return value; [...succes=1 default=ignore]
+2024-07-13T16:01:39.958626-06:00 joel-VirtualBox sudo: PAM pam_parse: expecting return value; [...succes=1 default=ignore]
+2024-07-13T16:01:39.959348-06:00 joel-VirtualBox sudo:     joel : TTY=pts/1 ; PWD=/etc/pam.d ; USER=root ; COMMAND=/usr/bin/nano common-auth
+2024-07-13T16:01:39.960502-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session opened for user root(uid=0) by joel(uid=1000)
+2024-07-13T16:02:04.798841-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session closed for user root
+2024-07-13T16:02:08.336778-06:00 joel-VirtualBox pamtester: PAM unable to dlopen(pam_lastlog.so): /usr/lib/security/pam_lastlog.so: cannot open shared object file: Not a directory
+2024-07-13T16:02:08.336941-06:00 joel-VirtualBox pamtester: PAM adding faulty module: pam_lastlog.so
+2024-07-13T16:05:01.301718-06:00 joel-VirtualBox CRON[6749]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-13T16:05:01.304006-06:00 joel-VirtualBox CRON[6749]: pam_unix(cron:session): session closed for user root
+2024-07-13T16:05:20.527303-06:00 joel-VirtualBox sudo:     joel : TTY=pts/1 ; PWD=/etc/pam.d ; USER=root ; COMMAND=/usr/bin/find base.ldif
+2024-07-13T16:05:20.528837-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session opened for user root(uid=0) by joel(uid=1000)
+2024-07-13T16:05:20.530628-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session closed for user root
+2024-07-13T16:06:13.758606-06:00 joel-VirtualBox sudo:     joel : TTY=pts/1 ; PWD=/etc/ldap ; USER=root ; COMMAND=/usr/bin/nano clapd.conf
+2024-07-13T16:06:13.759984-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session opened for user root(uid=0) by joel(uid=1000)
+2024-07-13T16:06:15.599400-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session closed for user root
+2024-07-13T16:06:19.590684-06:00 joel-VirtualBox sudo:     joel : TTY=pts/1 ; PWD=/etc/ldap ; USER=root ; COMMAND=/usr/bin/nano slapd.conf
+2024-07-13T16:06:19.591120-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session opened for user root(uid=0) by joel(uid=1000)
+2024-07-13T16:06:20.505117-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session closed for user root
+2024-07-13T16:06:29.778420-06:00 joel-VirtualBox sudo:     joel : TTY=pts/1 ; PWD=/etc/ldap ; USER=root ; COMMAND=/usr/bin/nano ldap.conf
+2024-07-13T16:06:29.779383-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session opened for user root(uid=0) by joel(uid=1000)
+2024-07-13T16:06:48.640198-06:00 joel-VirtualBox sudo: pam_unix(sudo:session): session closed for user root
+2024-07-13T16:09:01.316932-06:00 joel-VirtualBox CRON[7339]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2024-07-13T16:09:01.317816-06:00 joel-VirtualBox CRON[7339]: pam_unix(cron:session): session closed for user root
+2024-07-13T16:09:49.970220-06:00 joel-VirtualBox pamtester: PAM unable to dlopen(pam_lastlog.so): /usr/lib/security/pam_lastlog.so: cannot open shared object file: Not a directory
+2024-07-13T16:09:49.970677-06:00 joel-VirtualBox pamtester: PAM adding faulty module: pam_lastlog.so
