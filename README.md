@@ -27,12 +27,16 @@ Group Members:
 
 1. Clone this repository
 
+```bash
 git clone https://github.com/your-username/multi-server-lamp-automation.git
 cd multi-server-lamp-automation
+```
 
 2. Start the virtual machine
 
+```bash
 vagrant up
+```
 
 3. The Ansible playbook will run automatically to provision the servers.
 
@@ -56,7 +60,9 @@ vagrant up
 
 You can SSH into any of the servers using:
 
+```bash
 vagrant ssh <server-name>
+```
 
 Replace `<server-name>` with `db`, `auth`, or `app`.
 
@@ -64,7 +70,9 @@ Replace `<server-name>` with `db`, `auth`, or `app`.
 
 On the auth server, you can run the script that fetches and executes scripts from the database:
 
+```bash
 sudo python3 /usr/local/bin/fetch_and_execute_scripts.py
+```
 
 ## Customization
 
