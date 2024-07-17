@@ -20,7 +20,7 @@ Group Members:
 ## Prerequisites
 
 - [Vagrant](https://www.vagrantup.com/downloads)
-- [libvirt](https://libvirt.org/) (KVM) [VirtualBox](https://www.virtualbox.org/wiki/Downloads) (If you want to)
+- [libvirt](https://libvirt.org/) (KVM) or [VirtualBox](https://www.virtualbox.org/wiki/Downloads) (If you want to)
 - [Ansible](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html)
 
 ## Setup
