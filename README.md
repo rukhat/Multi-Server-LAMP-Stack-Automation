@@ -108,7 +108,7 @@ Contributions to improve the project are welcome. Please follow these steps:
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/rukhat/Multi-Server-LAMP-Stack-Automation/blob/main/LICENSE) file for details.
 
 
 # Some Details about the Protocols and Scripts Are Below
