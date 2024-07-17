@@ -80,15 +80,6 @@ sudo python3 /usr/local/bin/fetch_and_execute_scripts.py
 - Update `playbook.yml` to alter server setups or add new features.
 - Edit the Python script on the auth server to change how scripts are fetched and executed.
 
-## Security Notes
-
-This setup is for demonstration purposes and includes some simplifications that are not suitable for production environments. In a real-world scenario, you would need to:
-
-- Use more secure passwords and ideally a password management system.
-- Implement proper firewall rules.
-- Use SSL/TLS for all connections.
-- Follow the principle of least privilege for database users and system accounts.
-
 ## Troubleshooting
 
 If you encounter issues:
