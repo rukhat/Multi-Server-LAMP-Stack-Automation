@@ -28,5 +28,12 @@ Vagrant.configure("2") do |config|
 
   config.vm.provision "ansible" do |ansible|
     ansible.playbook = "playbook.yml"
+    ansible.groups = {
+        "db" => ["db"],
+        "auth" => ["auth"],
+        "app" => ["app"]
+    }
+    ansible.raw_ssh_args = ['-o UserKnownHostsFile=/dev/null', '-o StrictHostKeyChecking=no']
+    ansible.extra_vars = { ansible_python_interpreter: "/usr/bin/python3" }
   end
 end

@@ -15,14 +15,42 @@
           - nano
         state: present
 
+    - name: Gather Facts from All hosts
+      setup:
+
 - hosts: db
   become: yes
+  vars:
+    mysql_root_password: 'p@ssw0rd'
+
   tasks:
-    - name: Install MySQL
+    - name: Update apt cache
+      apt:
+        update_cache: yes
+
+    - name: Install MySQL and Python Dependencies
       apt:
         name:
           - mysql-server
           - python3-pymysql
+          - python3-mysqldb
+          - python3-pip
+        state: present
+
+    - name: Upgrade Pip
+      pip:
+        name: pip
+        state: latest
+        executable: pip3
+
+    - name: Install PyMySQL
+      pip:
+        name: PyMySQL
+        state: present
+
+    - name: Ensure pip is installed
+      apt:
+        name: python3-pip
         state: present
 
     - name: Start MySQL service
@@ -31,18 +59,102 @@
         state: started
         enabled: yes
 
+    - name: Ensure MySQL is Started
+      service:
+        name: mysql
+        state: started
+
+    - name: Set MySQL Root Password
+      mysql_user:
+        name: root
+        password: 'p@ssw0rd'
+        login_unix_socket: /var/run/mysqld/mysqld.sock
+      vars:
+        ansible_python_interpreter: /usr/bin/python3
+      environment:
+        PYTHONPATH: /usr/local/lib/python3.8/dist-packages
+
+    - name: Create .my.cnf File
+      copy:
+        content: |
+          [client]
+          user=root
+          password={{ mysql_root_password }}
+        dest: /root/.my.cnf
+        mode: '0600'
+      no_log: true
+
     - name: Create MySQL database
       mysql_db:
         name: myapp
         state: present
+        login_unix_socket: /var/run/mysqld/mysqld.sock
 
     - name: Create MySQL user
       mysql_user:
-        name: mysqluser
+        name: demo_user
         password: p@ssw0rd
         priv: 'myapp.*:ALL'
         host: '%'
         state: present
+
+    - name: Create Scripts Directory
+      file:
+        path: /opt/scripts
+        state: directory
+        mode: '0755'
+
+    - name: Ensure myapp database exists
+      mysql_db:
+        name: myapp
+        state: present
+      vars:
+        ansible_become_user: root
+    
+    - name: Create SQL File for Scripts Table
+      copy:
+        content: |
+          CREATE TABLE IF NOT EXISTS scripts (
+            id INT AUTO_INCREMENT PRIMARY KEY,
+            name VARCHAR(255) NOT NULL,
+            file_path VARCHAR(255) NOT NULL
+          );
+          INSERT INTO scripts (name, file_path) VALUES 
+          ('Authentication Server Lockout Policy Shell Script', '/opt/scripts/server_lockout.sh');
+        dest: /tmp/create_scripts_table.sql
+
+    - name: Create Scripts Table with File Paths
+      mysql_db:
+        name: myapp
+        state: import
+        target: /tmp/create_scripts_table.sql
+      vars:
+        ansible_become_user: root
+
+    - name: Create Sample Scripts
+      copy:
+        content: |
+          #!/bin/bash
+
+          ALLOWED_START=09
+          ALLOWED_END=17
+
+          CURRENT_HOUR=$(date +%H)
+
+          if [[ $CURRENT_HOUR -ge $ALLOWED_START && $CURRENT_HOUR -lt $ALLOWED_END ]]; then
+              exit 0
+          else
+              exit 1
+          fi
+        dest: /opt/scripts/test_script.sh
+        mode: '0755'
+
+    - name: Add auth Server's Public Key to authorized_keys
+      authorized_key:
+        user: vagrant
+        state: present
+        key: "{{ lookup('file', './auth_id_rsa.pub') }}"
+        
 
 - hosts: auth
   become: yes
@@ -59,6 +171,76 @@
         name: slapd
         state: started
         enabled: yes
+    
+    - name: Install Required Packages
+      apt:
+        name:
+          - mysql-client
+          - python3-mysqldb
+          - python3-paramiko
+          - python3-pip
+          - python3-mysqldb
+          - python3-paramiko
+        state: present
+        
+    - name: Install MySQL Connector for Python
+      pip:
+        name: mysql-connector-python
+        state: present
+    
+    - name: Generate SSH Key
+      user:
+        name: vagrant
+        generate_ssh_key: yes
+        ssh_key_bits: 2048
+        ssh_key_file: .ssh/id_rsa
+
+    - name: Fetch Public Key
+      fetch:
+        src: /home/vagrant/.ssh/id_rsa.pub
+        dest: ./auth_id_rsa.pub
+        flat: yes
+
+    - name: Create Script to Fetch and Execute Scripts from DB
+      copy:
+        content: |
+          #!/usr/bin/env python3
+          import mysql.connector
+          import paramiko
+          import sys
+
+          def fetch_script_paths():
+              connection = mysql.connector.connect(
+                  host="db",
+                  user="demo_user",
+                  password="p@ssw0rd",
+                  database="myapp"
+              )
+              cursor = connection.cursor(dictionary=True)
+              cursor.execute("SELECT name, file_path FROM scripts")
+              scripts = cursor.fetchall()
+              cursor.close()
+              connection.close()
+              return scripts
+
+          def execute_remote_script(script):
+              ssh = paramiko.SSHClient()
+              ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+              ssh.connect('db', username='vagrant', key_filename='/home/vagrant/.ssh/id_rsa')
+              
+              stdin, stdout, stderr = ssh.exec_command(f"bash {script['file_path']}")
+              print(f"Executing {script['name']}:")
+              print(stdout.read().decode())
+              print(stderr.read().decode())
+              
+              ssh.close()
+
+          if __name__ == "__main__":
+              scripts = fetch_script_paths()
+              for script in scripts:
+                  execute_remote_script(script)
+        dest: /usr/local/bin/fetch_and_execute_scripts.py
+        mode: '0755'
 
 - hosts: app
   become: yes
