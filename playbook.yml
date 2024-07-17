@@ -278,8 +278,8 @@
         path: /home/vagrant/backup_scripts
         state: directory
 
-    -name: Create backup script for db-server
-     copy:
+    - name: Create backup script for db-server
+      copy:
         dest: home/vagrant/backup_scripts/backup_dp.sh
         content: |
           #!/bin/bash
@@ -295,7 +295,7 @@
       mode: '0755'
 
 
-  - name: Schedule backup script for db-server
+    - name: Schedule backup script for db-server
       cron:
         name: "Backup DB Server"
         minute: "0"
