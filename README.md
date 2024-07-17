@@ -126,15 +126,12 @@ This section of the project will demonstrate the setup and configuration of an L
 
 3. **Configure LDAP:**
     - Follow the steps in `setup-ldap.md` to configure the LDAP server.
-    - 
 
 4. **Configure PAM:**
     - Follow the steps in `setup-pam.md` to integrate PAM with LDAP.
-    - 
 
 5. **Run Featured Scripts:**
     - Use the provided `check_time.sh` script for time-based access restrictions.
-   
    
    
 # Application Management Script
