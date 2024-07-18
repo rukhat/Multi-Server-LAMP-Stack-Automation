@@ -28,7 +28,7 @@ Group Members:
 1. Clone this repository
 
 ```bash
-git clone https://github.com/your-username/multi-server-lamp-automation.git
+git clone https://github.com/rukhat/Multi-Server-LAMP-Stack-Automation.git
 cd multi-server-lamp-automation
 ```
 
