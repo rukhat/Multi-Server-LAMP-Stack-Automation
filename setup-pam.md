@@ -39,15 +39,7 @@ Add the following lines to the .conf file.
 session required pam_unix.so
 session optional pam_ldap.so
 
-6.) Restart the necessary services for the changes to take effect.
 
-sudo systemctl restart mscd
-sudo systemctl restart nslcd
-
-7.) Test PAM configuration.
-
-sudo apt install libpam-tester
-pamtester <service_name> <username> authenticate
 
 
 

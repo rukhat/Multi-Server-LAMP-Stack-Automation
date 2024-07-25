@@ -19,9 +19,24 @@ sudo apt install slapd ldap-utils
 
 3.) Configure OpenLDAP.
 
-Use "dpkg-reconfigure slapd" and follow the setup instructions.
+Use "sudo dpkg-reconfigure slapd" and follow the setup instructions.
 Follow the interactive setup 
-Set the LDAP domain (e.g., example.com), as well as the LDAP administrator password.
+Set the LDAP domain (e.g., authentication.local), as well as the LDAP administrator password.
+
+4.) Enter the LDAP Account Manager
+
+Navigate to http:// IP of your Server/lam
+
+Select LAM configuration, and select edit server profiles. The default login for lam is also lam.
+
+Navigate to server settings and modify list of valid users. Should read "cn=admin,dc=authentication,dc=local". Ensure LAM is set to the correct timezone, and modify tree view under tool settings to say "dc=authentication,dc=local".
+
+Change the default password under profile password. This will be the password for the lam account, and the password set in step 3 is the admin password account. Ensure you save all changes.
+
+Now you should be able to log in to the admin account and create groups/users.
+
+
+
 
 ## **OPTIONAL** - Set up the LDAP Account Manager
 

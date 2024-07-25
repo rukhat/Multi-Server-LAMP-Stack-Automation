@@ -28,7 +28,7 @@ Group Members:
 1. Clone this repository
 
 ```bash
-git clone https://github.com/your-username/multi-server-lamp-automation.git
+git clone https://github.com/rukhat/Multi-Server-LAMP-Stack-Automation.git
 cd multi-server-lamp-automation
 ```
 
@@ -123,8 +123,17 @@ This section of the project will demonstrate the setup and configuration of an L
 
 1. **Install Required Packages:**
 
-    sudo apt install apache2 php php-cgi libapache2-mod-php php-mbstring php-common php-pear slapd ldap-utils ldap-account-manager -y
+    sudo apt install apache2 php php-cgi libapache2-mod-php php-mbstring php-common php-pear -y
+
+    sudo apt install slapd ldap-utils -y
+
+    Run "sudo slapcat" to verify OpenLDAP installation.
    
+    sudo apt install ldap-account-manager -y
+
+    Run "sudo a2enconf php*-cgi" to enable the PHP-CGI PHP extension. Once the service is restarted, run "sudo systemctl enable apache2" to enable the Apache service to autostart at boot time.
+
+    Run "sudo systemctl status apache2" to confirm the Apache service is running.
 
 3. **Configure LDAP:**
     - Follow the steps in `setup-ldap.md` to configure the LDAP server.
