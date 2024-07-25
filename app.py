@@ -5,6 +5,13 @@ import psutil
 import logging
 from datetime import datetime
 
+import app_config
+
+db_ip = app_config.DB_IP
+auth_ip = app_config.AUTH_IP
+backup_scripts_dir = app_config.BACKUP_SCRIPTS_DIR
+backup_storage_dir = app_config.BACKUP_STORAGE_DIR
+
 # Configure logging
 logging.basicConfig(filename='/home/vagrant/app_management.log', level=logging.INFO, format='%(asctime)s %(message)s')
 

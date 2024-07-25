@@ -66,13 +66,15 @@ vagrant ssh <server-name>
 
 Replace `<server-name>` with `db`, `auth`, or `app`.
 
-### Running the Script Fetcher
+### Fetch and Execute Scripts
 
 On the auth server, you can run the script that fetches and executes scripts from the database:
 
 ```bash
-sudo python3 /usr/local/bin/fetch_and_execute_scripts.py
+sudo bash /usr/local/bin/fetch_and_execute_scripts.sh
 ```
+
+This script connects to the MySQL database on the db server, retrieves script information, and executes the scripts via SSH.
 
 ## Customization
 

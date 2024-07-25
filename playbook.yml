@@ -1,8 +1,19 @@
 ---
+###### Playbook for setting up multi-server LAMP stack #####
+
+# Common tasks for all servers
 - hosts: all
   become: yes
+  vars:
+    db_ip: "192.168.56.10"
+    auth_ip: "192.168.56.11"
+    app_ip: "192.168.56.12"
+    db_user: "demo_user"
+    db_password: "team3"
+    db_name: "myapp"
+
   tasks:
-    - name: Update apt cache
+    - name: Update apt Cache
       apt:
         update_cache: yes
 
@@ -18,10 +29,16 @@
     - name: Gather Facts from All hosts
       setup:
 
+
+##### Tasks specific to the database server #####
+
 - hosts: db
   become: yes
   vars:
-    mysql_root_password: 'p@ssw0rd'
+    db_user: "demo_user"
+    db_password: "team3"
+    mysql_root_password: "team3"
+    db_name: "myapp"
 
   tasks:
     - name: Update apt cache
@@ -48,26 +65,16 @@
         name: PyMySQL
         state: present
 
-    - name: Ensure pip is installed
-      apt:
-        name: python3-pip
-        state: present
-
     - name: Start MySQL service
       service:
         name: mysql
         state: started
         enabled: yes
 
-    - name: Ensure MySQL is Started
-      service:
-        name: mysql
-        state: started
-
     - name: Set MySQL Root Password
       mysql_user:
         name: root
-        password: 'p@ssw0rd'
+        password: "{{ mysql_root_password }}"
         login_unix_socket: /var/run/mysqld/mysqld.sock
       vars:
         ansible_python_interpreter: /usr/bin/python3
@@ -84,17 +91,32 @@
         mode: '0600'
       no_log: true
 
+    - name: Allow remote connections to MySQL
+      lineinfile:
+        path: /etc/mysql/mysql.conf.d/mysqld.cnf
+        regexp: '^bind-address'
+        line: 'bind-address = 0.0.0.0'
+      notify: Restart MySQL
+
     - name: Create MySQL database
       mysql_db:
-        name: myapp
+        name: "{{ db_name }}"
         state: present
         login_unix_socket: /var/run/mysqld/mysqld.sock
 
     - name: Create MySQL user
       mysql_user:
-        name: demo_user
-        password: p@ssw0rd
+        name: "{{ db_user }}"
+        password: "{{ db_password }}"
         priv: 'myapp.*:ALL'
+        host: '%'
+        state: present
+
+    - name: Grant privileges to demo_user
+      mysql_user:
+        name: "{{ db_user }}"
+        password: "{{ db_password }}"
+        priv: '*.*:ALL'
         host: '%'
         state: present
 
@@ -103,13 +125,6 @@
         path: /opt/scripts
         state: directory
         mode: '0755'
-
-    - name: Ensure myapp database exists
-      mysql_db:
-        name: myapp
-        state: present
-      vars:
-        ansible_become_user: root
     
     - name: Create SQL File for Scripts Table
       copy:
@@ -125,28 +140,16 @@
 
     - name: Create Scripts Table with File Paths
       mysql_db:
-        name: myapp
+        name: "{{ db_name }}"
         state: import
         target: /tmp/create_scripts_table.sql
-      vars:
-        ansible_become_user: root
+      # vars:
+      #   ansible_become_user: root
 
-    - name: Create Sample Scripts
+    - name: Create Server Lockout Script
       copy:
-        content: |
-          #!/bin/bash
-
-          ALLOWED_START=09
-          ALLOWED_END=17
-
-          CURRENT_HOUR=$(date +%H)
-
-          if [[ $CURRENT_HOUR -ge $ALLOWED_START && $CURRENT_HOUR -lt $ALLOWED_END ]]; then
-              exit 0
-          else
-              exit 1
-          fi
-        dest: /opt/scripts/test_script.sh
+        src: server_lockout.sh
+        dest: /opt/scripts/server_lockout.sh
         mode: '0755'
 
     - name: Add auth Server's Public Key to authorized_keys
@@ -154,24 +157,30 @@
         user: vagrant
         state: present
         key: "{{ lookup('file', './auth_id_rsa.pub') }}"
-        
+
+  handlers:
+    - name: Restart MySQL
+      service:
+        name: mysql
+        state: restarted      
+
+
+################### auth server ##################
+
 
 - hosts: auth
   become: yes
-  tasks:
-    - name: Install OpenLDAP
-      apt:
-        name:
-          - slapd
-          - ldap-utils
-        state: present
+  vars:
+    db_ip: "192.168.56.10"
+    db_user: "demo_user"
+    db_password: "team3"
+    db_name: "myapp"
 
-    - name: Start OpenLDAP service
-      service:
-        name: slapd
-        state: started
-        enabled: yes
-    
+  tasks:
+    - name: Update apt cache
+      apt:
+        update_cache: yes
+
     - name: Install Required Packages
       apt:
         name:
@@ -182,10 +191,85 @@
           - python3-mysqldb
           - python3-paramiko
         state: present
+
+    - name: Install OpenLDAP
+      apt:
+        name:
+          - slapd
+          - ldap-utils
+          - libnss-ldap
+        state: present
+
+    - name: Start OpenLDAP service
+      service:
+        name: slapd
+        state: started
+        enabled: yes
+
+    - name: Configure LDAP
+      command: dpkg-reconfigure slapd
+      when: false
+
+    # - name: Configure OpenLDAP
+    #   ldap_attrs:
+    #     dn: olcDatabase={1}mdb,cn=config
+    #     attributes:
+    #       olcSuffix: dc=example,dc=com
+    #       olcRootDN: cn=admin,dc=example,dc=com
+    #       olcRootPW: "{{ lookup('password', '/dev/null chars=ascii_letters,digits length=12') }}"
+    #   notify: Restart LDAP Services
+
+    # - name: Set OpenLDAP admin password
+    #   ldap_attrs:
+    #     dn: cn=admin,dc=example,dc=com
+    #     attributes:
+    #       userPassword: "{{ lookup('password', '/dev/null chars=ascii_letters,digits length=12') }}"
+    #   notify: Restart LDAP Services
+
+    # - name: Create base organizational units
+    #   ldap_entry:
+    #     dn: "{{ item }}"
+    #     objectClass: organizationalUnit
+    #   loop:
+    #     - ou=users,dc=example,dc=com
+    #     - ou=groups,dc=example,dc=com
+    #   notify: Restart LDAP Services
+
+    - name: Install PAM
+      apt:
+        name:
+          - libpam-ldap
+          - nslcd
+          - pamtester
+        state: present
+      notify:
+        - Restart LDAP Services
+
+    - name: Configure PAM
+      template:
+        src: "{{ item.src }}"
+        dest: "{{ item.dest }}"
+        backup: yes
+      loop:
+        - { src: 'pam_common-auth.j2', dest: '/etc/pam.d/common-auth' }
+        - { src: 'pam_common-account.j2', dest: '/etc/pam.d/common-account' }
+        - { src: 'pam_common-session.j2', dest: '/etc/pam.d/common-session' }
+        - { src: 'pam_common-password.j2', dest: '/etc/pam.d/common-password' }
+    
+    - name: Restart LDAP Services
+      systemd:
+        name: "{{ item }}"
+        state: restarted
+      loop:
+        - slapd
+        - nslcd 
+      ignore_errors: yes
         
     - name: Install MySQL Connector for Python
       pip:
-        name: mysql-connector-python
+        name:
+          - mysql-connector-python
+          - paramiko
         state: present
     
     - name: Generate SSH Key
@@ -203,48 +287,43 @@
 
     - name: Create Script to Fetch and Execute Scripts from DB
       copy:
-        content: |
-          #!/usr/bin/env python3
-          import mysql.connector
-          import paramiko
-          import sys
-
-          def fetch_script_paths():
-              connection = mysql.connector.connect(
-                  host="db",
-                  user="demo_user",
-                  password="p@ssw0rd",
-                  database="myapp"
-              )
-              cursor = connection.cursor(dictionary=True)
-              cursor.execute("SELECT name, file_path FROM scripts")
-              scripts = cursor.fetchall()
-              cursor.close()
-              connection.close()
-              return scripts
-
-          def execute_remote_script(script):
-              ssh = paramiko.SSHClient()
-              ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-              ssh.connect('db', username='vagrant', key_filename='/home/vagrant/.ssh/id_rsa')
-              
-              stdin, stdout, stderr = ssh.exec_command(f"bash {script['file_path']}")
-              print(f"Executing {script['name']}:")
-              print(stdout.read().decode())
-              print(stderr.read().decode())
-              
-              ssh.close()
-
-          if __name__ == "__main__":
-              scripts = fetch_script_paths()
-              for script in scripts:
-                  execute_remote_script(script)
-        dest: /usr/local/bin/fetch_and_execute_scripts.py
+        src: fetch_and_execute_scripts.sh
+        dest: /usr/local/bin/fetch_and_execute_scripts.sh
         mode: '0755'
+
+    - name: Ensure SSH key exists for vagrant user
+      user:
+        name: vagrant
+        generate_ssh_key: yes
+        ssh_key_bits: 2048
+        ssh_key_file: .ssh/id_rsa
+
+  handlers:
+    - name: Restart LDAP Services
+      systemd:
+        name: "{{ item }}"
+        state: restarted
+      loop:
+        - slapd
+        - nslcd
+      ignore_errors: yes
+
+
+############# app server ####################
 
 - hosts: app
   become: yes
+  vars:
+    db_ip: "192.168.56.10"
+    auth_ip: "192.168.56.11"
+    backup_scripts_dir: "/home/vagrant/backup_scripts"
+    backup_dest_dir: "/home/vagrant/backups"
+
   tasks:
+    - name: Update apt Cache
+      apt:
+        update_cache: yes
+
     - name: Install Apache and PHP
       apt:
         name:
@@ -264,7 +343,12 @@
       copy:
         content: "<?php phpinfo(); ?>"
         dest: /var/www/html/info.php
-        
+
+    - name: Create app config file
+      template:
+        src: app_config.j2
+        dest: /home/vagrant/app_config.py   
+        mode: '0644' 
         
         
 #Additional tasks for Management
@@ -275,39 +359,50 @@
 
     - name: Create backup script directory
       file:
-        path: /home/vagrant/backup_scripts
+        path: "{{ backup_scripts_dir }}"
         state: directory
+        mode: '0755'
 
     - name: Create backup script for db-server
       copy:
-        dest: home/vagrant/backup_scripts/backup_dp.sh
+        dest: "{{ backup_scripts_dir }}/backup_db.sh"
         content: |
           #!/bin/bash
-          rsync -avz --delete  vagrant @102.168.56.10: //PATH
-      mode: '0755'
+          rsync -avz --delete vagrant@{{ db_ip }}:/path/to/backup/ {{ backup_dest_dir }}/db/
+        mode: '0755'
 
     - name: Create backup script for auth-server
       copy:
-        dest: /home/vagrant/backup_scripts/backup_auth.sh
+        dest: "{{ backup_scripts_dir }}/backup_auth.sh"
         content: |
           #!/bin/bash
-          rsync -avz --delete vagrant@192.168.56.11:/path/to/backup/ /home/vagrant/backups/auth/
-      mode: '0755'
+          rsync -avz --delete vagrant@{{ auth_ip }}:/path/to/backup/ {{ backup_dest_dir }}/auth/
+        mode: '0755'
 
+    - name: Ensure backup destination directories exist
+      file:
+        path: "{{ item }}"
+        state: directory
+        mode: '0755'
+      loop:
+        - "{{ backup_dest_dir }}/db"
+        - "{{ backup_dest_dir }}/auth"
 
     - name: Schedule backup script for db-server
       cron:
         name: "Backup DB Server"
         minute: "0"
         hour: "2"
-        job: "/home/vagrant/backup_scripts/backup_db.sh"
+        job: "{{ backup_scripts_dir }}/backup_db.sh"
+        user: vagrant
 
     - name: Schedule backup script for auth-server
       cron:
         name: "Backup Auth Server"
         minute: "0"
         hour: "3"
-        job: "/home/vagrant/backup_scripts/backup_auth.sh"
+        job: "{{ backup_scripts_dir }}/backup_auth.sh"
+        user: vagrant
 
         
 
