@@ -175,6 +175,9 @@
     db_user: "demo_user"
     db_password: "team3"
     db_name: "myapp"
+    # ldap_domain: "example.com"
+    # ldap_organization: "Example Org"
+    # ldap_admin_password: "password"
 
   tasks:
     - name: Update apt cache
@@ -184,13 +187,55 @@
     - name: Install Required Packages
       apt:
         name:
+          - apache2
+          - php
+          - php-cgi
+          - libapache2-mod-php
+          - php-mbstring
+          - php-common
+          - php-pear
+          - slapd
+          - ldap-utils
+          - ldap-account-manager
           - mysql-client
           - python3-mysqldb
-          - python3-paramiko
           - python3-pip
-          - python3-mysqldb
-          - python3-paramiko
+          - net-tools
+          # - mysql-client
+          # - python3-mysqldb
+          # - python3-paramiko
+          # - python3-pip
+          # - python3-mysqldb
+          # - python3-paramiko
         state: present
+
+    - name: Enable PHP-CGI
+      command: a2enconf php*-cgi
+      notify: Restart Apache
+
+    - name: Enable Apache service
+      systemd:
+        name: apache2
+        enabled: yes
+        state: started
+
+    - name: Verify OpenLDAP installation
+      command: slapcat
+      register: slapcat_result
+      changed_when: false
+
+    # - name: Configure LDAP
+    #   debconf:
+    #     name: slapd
+    #     question: "{{ item.question }}"
+    #     value: "{{ item.value }}"
+    #     vtype: "{{ item.vtype }}"
+    #   loop:
+    #     - { question: 'slapd/password1', value: '{{ ldap_admin_password }}', vtype: 'password' }
+    #     - { question: 'slapd/password2', value: '{{ ldap_admin_password }}', vtype: 'password' }
+    #     - { question: 'slapd/domain', value: '{{ ldap_domain }}', vtype: 'string' }
+    #     - { question: 'shared/organization', value: '{{ ldap_organisation }}', vtype: 'string' }
+    #   notify: Reconfigure LDAP
 
     - name: Install OpenLDAP
       apt:
@@ -206,9 +251,9 @@
         state: started
         enabled: yes
 
-    - name: Configure LDAP
-      command: dpkg-reconfigure slapd
-      when: false
+    # - name: Configure LDAP
+    #   command: dpkg-reconfigure slapd
+    #   when: false
 
     # - name: Configure OpenLDAP
     #   ldap_attrs:
@@ -235,7 +280,7 @@
     #     - ou=groups,dc=example,dc=com
     #   notify: Restart LDAP Services
 
-    - name: Install PAM
+    - name: Install PAM LDAP
       apt:
         name:
           - libpam-ldap
@@ -299,6 +344,14 @@
         ssh_key_file: .ssh/id_rsa
 
   handlers:
+    - name: Restart Apache
+      systemd:
+        name: apache2
+        state: restarted
+
+    - name: Reconfigure LDAP
+      command: dpkg-reconfigure -f noninteractive slapd
+
     - name: Restart LDAP Services
       systemd:
         name: "{{ item }}"

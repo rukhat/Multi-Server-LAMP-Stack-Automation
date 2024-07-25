@@ -26,6 +26,9 @@ auth	requisite			pam_deny.so
 # this avoids us returning an error just because nothing sets a success code
 # since the modules above will each just jump around
 auth	required			pam_permit.so
+auth    required            pam_unix.so nullok_secure
+auth    sufficient          pam_ldap.so use_first_pass
+auth    required            pam_deny.so
 # and here are more per-package modules (the "Additional" block)
 auth	optional			pam_cap.so 
 # end of pam-auth-update config
